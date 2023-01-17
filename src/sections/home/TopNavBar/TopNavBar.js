@@ -1,8 +1,9 @@
+import { useState } from "react";
 import { faArrowDown, faCheck, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
-
-import Button from "../Button/Button";
+import DesktopAndTabletLogo from '../../../utils/logo/navigationvar-logo-desktop-and-tablet.svg';
+import MobileLogo from '../../../utils/logo/navigationbar-logo-mobile.svg';
+import Button from "../../../components/Button/Button";
 
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
@@ -13,7 +14,9 @@ export default function NavBar() {
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <a href="#">
-                            <h2 className="text-2xl font-readex_bold">Intripid</h2>
+                            {/* <h2 className="text-2xl font-readex_bold">Intripid</h2> */}
+                            <img className="hidden md:block" src= {DesktopAndTabletLogo} />
+                            <img className="md:hidden" src= {MobileLogo} />
                         </a>
                         {!navbar ?  <div className="md:hidden"> 
                             <Button title= "Be A Member" />

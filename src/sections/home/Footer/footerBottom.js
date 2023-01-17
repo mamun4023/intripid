@@ -1,10 +1,10 @@
 import React from "react"
 
 
-export default function BottomSection(){
+export default function FooterTop(){
     return(
         <div>
-            from Bottom section
+            from footer bottom
         </div>
     )
 }

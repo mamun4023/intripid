@@ -1,10 +1,11 @@
 import React from "react";
-import TopBanner from "../../components/Banner/TopBanner";
-import LanguageSelector from "../../components/LanguageSelector/languageSelector";
-import TopNavBar from "../../components/TopNavBar/TopNavBar";
-import TopSection from '../../components/Body/TopSection';
-import MiddleSection from "../../components/Body/MiddleSection";
-import BottomSection from "../../components/Body/BottomSection";
+import TopBanner from "../../sections/home/Banner/TopBanner";
+import LanguageSelector from "../../sections/home/LanguageSelector/languageSelector";
+import TopNavBar from "../../sections/home/TopNavBar/TopNavBar";
+import TopSection from '../../sections/home/Body/TopSection';
+import MiddleSection from "../../sections/home/Body/MiddleSection";
+import BottomSection from "../../sections/home/Body/BottomSection";
+import FooterTop from "../../sections/home/Footer/footerTop";
 
 
 export default function Home(){
@@ -12,16 +13,19 @@ export default function Home(){
         <div>
             {/* header section */}
             <div className="md:ml-20 md:mr-20 "> 
-                <LanguageSelector />
+                {/* <LanguageSelector /> */}
                 <div className="px-2"> 
-                    <TopNavBar />
+                    {/* <TopNavBar /> */}
                 </div>
-                <TopBanner />
+                {/* <TopBanner /> */}
                 {/* body component */}
             </div> 
-            <TopSection />
-            <MiddleSection />
+            {/* <TopSection /> */}
+            {/* <MiddleSection /> */}
             <BottomSection />
+
+            {/* <FooterTop /> */}
+            {/* <FooterBoot/> */}
         </div>
     )
 }
