@@ -45,7 +45,7 @@ export default function MiddleSection(){
                             leading-tight
                             border-x-0 border-t-0 border-transparent
                             px-2
-                            py-3
+                            py-2
                             my-2
                             bg-slate-100
                             hover:border-transparent hover:bg-gray-100
