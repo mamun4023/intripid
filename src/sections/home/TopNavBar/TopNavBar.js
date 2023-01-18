@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { faArrowDown, faCheck, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import React,{ useState } from "react";
+import {faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DesktopAndTabletLogo from '../../../utils/logo/navigationvar-logo-desktop-and-tablet.svg';
 import MobileLogo from '../../../utils/logo/navigationbar-logo-mobile.svg';
@@ -9,24 +9,24 @@ export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="w-full bg-white">
+        <nav className="w-full bg-white max-w-5xl">
             <div className="justify-between mx-auto lg:max-w-7xl md:items-center md:flex">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <a href="#">
-                            {/* <h2 className="text-2xl font-readex_bold">Intripid</h2> */}
-                            <img className="hidden md:block" src= {DesktopAndTabletLogo} />
-                            <img className="md:hidden" src= {MobileLogo} />
+                            <img className="w-20 hidden md:block" src= {DesktopAndTabletLogo} />
+                            <img className="w-10  md:hidden" src= {MobileLogo} />
                         </a>
-                        {!navbar ?  <div className="md:hidden"> 
-                            <Button title= "Be A Member" />
-                        </div>: null}
+                        {!navbar ? 
+                            <div className="md:hidden"> 
+                                <Button title= "Be A Member" />
+                            </div>:     
+                        null}
                         <div className="md:hidden">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                                 onClick={() => setNavbar(!navbar)}
                             >
-                                
                                 {navbar ? (
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -67,27 +67,28 @@ export default function NavBar() {
                         }`}
                     >
                         <ul className="items-center justify-center space-y-2 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-gray-600 hover:text-blue-600">
+                            <li className="text-gray-600 hover:text-violet-600">
                                 <a className=" text-sm " href="#">About</a>
                             </li>
-                            <li className="text-gray-600 hover:text-blue-600">
-                                <a className=" text-sm pr-1" href="javascript:void(0)">Travel Solution</a>
+                            <li className="text-gray-600 hover:text-violet-600">
+                                <a className=" text-sm pr-1" href="#">Travel Solution</a>
                                 <FontAwesomeIcon 
                                     icon={faChevronDown}
                                 />
                             </li>
-                            <li className="text-gray-600 hover:text-blue-600">
-                                <a className=" text-sm " href="javascript:void(0)">Pricing</a>
-                                
+                            <li className="text-gray-600 hover:text-violet-600">
+                                <a className=" text-sm pr-1" href="#">Our Travelers</a>
                             </li>
-                            <li className="text-gray-600 hover:text-blue-600">
-                                <a className=" text-sm" href="javascript:void(0)">FAQs</a>
+                            <li className="text-gray-600 hover:text-violet-600">
+                                <a className=" text-sm " href="#">Pricing</a>
+                            </li>
+                            <li className="text-gray-600 hover:text-violet-600">
+                                <a className=" text-sm" href="#">FAQs</a>
                             </li>
                             <li className=" hidden md:block ">
                                 <Button title= "Be A Member" />
                             </li>
                         </ul>
-                        
                     </div>
                 </div>
             </div>

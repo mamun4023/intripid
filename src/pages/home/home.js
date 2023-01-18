@@ -6,26 +6,26 @@ import TopSection from '../../sections/home/Body/TopSection';
 import MiddleSection from "../../sections/home/Body/MiddleSection";
 import BottomSection from "../../sections/home/Body/BottomSection";
 import FooterTop from "../../sections/home/Footer/footerTop";
-
+import FooterBottom from '../../sections/home/Footer/footerBottom'
 
 export default function Home(){
     return(
         <div>
             {/* header section */}
             <div className="md:ml-20 md:mr-20 "> 
-                {/* <LanguageSelector /> */}
+                <LanguageSelector />
                 <div className="px-2"> 
-                    {/* <TopNavBar /> */}
+                    <TopNavBar />
                 </div>
-                {/* <TopBanner /> */}
+                <TopBanner />
                 {/* body component */}
             </div> 
-            {/* <TopSection /> */}
-            {/* <MiddleSection /> */}
-            <BottomSection />
+            <TopSection />
+            <MiddleSection />
+            {/* <BottomSection /> */}
 
             {/* <FooterTop /> */}
-            {/* <FooterBoot/> */}
+            {/* <FooterBottom/> */}
         </div>
     )
 }

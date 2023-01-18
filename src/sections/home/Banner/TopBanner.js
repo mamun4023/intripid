@@ -11,8 +11,7 @@ export default function TopBanner(){
                     <div className="flex"> 
                     <input
                         type="text"
-                        class="
-                        
+                        className="
                             form-control
                             block
                             w-full

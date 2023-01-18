@@ -1,26 +1,31 @@
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 export default function LanguageSelector(){
     return(
-      
-        <div className="bg-slate-100 flex flex-row-reverse">
-            <div className=""> 
+        <div className="flex flex-row-reverse max-w-5xl">
+            <div className="mt-2"> 
                 <FontAwesomeIcon 
                     icon={faGlobe}
                 />
                 <select 
-                    class="form-select text-base
-                        font-normal
+                    className="
+                        form-select 
+                        text-sm 
+                        font-sans
                         text-gray-700
-                        bg-slate-100 bg-clip-padding bg-no-repeatrounded
+                        bg-white
                         transition
                         ease-in-out
-                        m-0
-                        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Default select example">
-                    <option value= "English" selected>English</option>
-                    <option value="Bangla">Bangla</option>
+                        focus:text-gray-700
+                        focus:bg-white 
+                        focus:border-violet-600 
+                        focus:outline-violet-600" 
+                        aria-label="Default select example"
+                    >
+                        <option value= "English" >English</option>
+                        <option value="Bangla">Bangla</option>
                 </select>
             </div>
         </div>  

@@ -1,8 +1,10 @@
-import { faXmarkCircle } from "@fortawesome/free-solid-svg-icons"
+import { faCheck, faXmarkCircle } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 
 import TableBackground from "../../../utils/TableImage/TableBackground.svg"
+import IntripidLogo from '../../../utils/logo/navigationvar-logo-desktop-and-tablet.svg'
+
 
 export default function BottomSection(){
     return(
@@ -21,25 +23,100 @@ export default function BottomSection(){
                 >
                     <div className=" relative -top-8"> 
                         <div class="flex justify-center">
-                            <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
+                            <div class="block p-6 rounded-lg shadow-lg bg-white ">
                               <div className="flex">
-                                <div>
-                                    <h6> Speed </h6>
-
-
+                              <div className=" border-violet-600 border-2 rounded-lg p-5 ">
+                                    <div className="mb-4">
+                                        <h4>Legacy Customed</h4>
+                                    </div>
+                                    <div className="flex justify-center"> 
+                                        <p className="text-violet-600 p-2 text-sm">Very Fast</p>
+                                    </div>
+                                    <div className="flex justify-center"> 
+                                        <p className="text-violet-600 p-2 text-sm">Very Low</p>
+                                    </div>
+                                    <div className="flex justify-center"> 
+                                        <p className="text-violet-600 p-2 text-sm">Very High</p>
+                                    </div>
+                                    <div className="flex justify-center">
+                                        <p className="text-violet-600 p-2 text-sm">Very High</p>
+                                    </div>
+                                    <div className="flex justify-center"> 
+                                    <FontAwesomeIcon 
+                                        icon={faCheck}
+                                        className="text-violet-600 p-2 text-sm"
+                                    />
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4>Legacy Customed</h4>
+                            
+                                <div className=" border-violet-600 border-2 rounded-lg p-5 ">
+                                    <div className="mb-4">
+                                        <h4>Legacy Customed</h4>
+                                    </div>
+                                    <div className="flex justify-center"> 
+                                        <p className="text-violet-600 p-2 text-sm">Very Fast</p>
+                                    </div>
+                                    <div className="flex justify-center"> 
+                                        <p className="text-violet-600 p-2 text-sm">Very Low</p>
+                                    </div>
+                                    <div className="flex justify-center"> 
+                                        <p className="text-violet-600 p-2 text-sm">Very High</p>
+                                    </div>
+                                    <div className="flex justify-center">
+                                        <p className="text-violet-600 p-2 text-sm">Very High</p>
+                                    </div>
+                                    <div className="flex justify-center"> 
+                                    <FontAwesomeIcon 
+                                        icon={faCheck}
+                                        className="text-violet-600 p-2 text-sm"
+                                    />
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4>Legacy Packaged</h4>
+                                <div className=" border-violet-600 border-2 rounded-lg p-5 ">
+                                    <div className="mb-4">
+                                        <h4>Legacy Customed</h4>
+                                    </div>
+                                    <div className="flex justify-center"> 
+                                        <p className="text-violet-600 p-2 text-sm">Very Fast</p>
+                                    </div>
+                                    <div className="flex justify-center"> 
+                                        <p className="text-violet-600 p-2 text-sm">Very Low</p>
+                                    </div>
+                                    <div className="flex justify-center"> 
+                                        <p className="text-violet-600 p-2 text-sm">Very High</p>
+                                    </div>
+                                    <div className="flex justify-center">
+                                        <p className="text-violet-600 p-2 text-sm">Very High</p>
+                                    </div>
+                                    <div className="flex justify-center"> 
+                                    <FontAwesomeIcon 
+                                        icon={faCheck}
+                                        className="text-violet-600 p-2 text-sm"
+                                    />
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4>Intripid</h4>
-                                    <p>Very Fast</p>
-                                    <p>Very Low</p>
-                                    <p>Very High</p>
-                                    <p>Very High</p>
+                                <div className=" border-violet-600 border-2 rounded-lg p-5 ">
+                                    <div className="mb-4">
+                                        <img  src= {IntripidLogo} />
+                                    </div>
+                                    <div className="flex justify-center"> 
+                                        <p className="text-violet-600 p-2 text-sm">Very Fast</p>
+                                    </div>
+                                    <div className="flex justify-center"> 
+                                        <p className="text-violet-600 p-2 text-sm">Very Low</p>
+                                    </div>
+                                    <div className="flex justify-center"> 
+                                        <p className="text-violet-600 p-2 text-sm">Very High</p>
+                                    </div>
+                                    <div className="flex justify-center">
+                                        <p className="text-violet-600 p-2 text-sm">Very High</p>
+                                    </div>
+                                    <div className="flex justify-center"> 
+                                    <FontAwesomeIcon 
+                                        icon={faCheck}
+                                        className="text-violet-600 p-2 text-sm"
+                                    />
+                                    </div>
                                 </div>
                               </div>
                             </div>
@@ -72,14 +149,15 @@ export default function BottomSection(){
                     </p>
                 </div>
                 <div class="block p-6 m-2 rounded-lg shadow-lg bg-slate-100 max-w-sm">
-                    <h5 class="text-red-600 text-xl leading-tight font-medium mb-2">
-                        Personalized, Fast, and Affordable!—Intripid circle-check
+                    <h5 class="text-violet-600 text-xl leading-tight font-medium mb-2 ">
+                        Personalized, Fast, and  <br/> Affordable!—Intripid circle-check
                         <FontAwesomeIcon 
                             icon={faXmarkCircle}
+                            className = "text-violet-600"
                         />
                     </h5>
                     <p style={{fontSize : 12}} class="text-gray-700  mb-4 font-readex_light">
-                        Intripid 's proprietary tech enables highly-personalized results, delivered fast - and at super-low cost
+                    Intripid 's proprietary tech enables highly-personalized results, delivered fast - and at super-low cost
                     </p>
                 </div>
             </div>
