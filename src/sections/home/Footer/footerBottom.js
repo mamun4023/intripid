@@ -10,8 +10,8 @@ import TwitterIcon from '../../../utils/BrandIcons/Pngs/SocialIcons/Twitter.png'
 export default function FooterBottom(){   
 
     return(
-        <div className=""> 
-            <div className="flex justify-center ml-20 mr-20">
+        <div className="m-10"> 
+            <div className="flex justify-center  md:ml-28 md:mr-28">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-12  ">
                     <div className=" col-span-3">
                         <img 
@@ -42,8 +42,8 @@ export default function FooterBottom(){
                         </div>
                     </div>
                     <div className="col-span-9"> 
-                        <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 ">
-                            <div className="mt-4 mb-4 pr-4 pl-4 ">
+                        <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 ">
+                            <div className="mt-4 mb-4 pr-4">
                                 <h2 className="font-readex_bold" > About </h2>
                                 <div>
                                     <div className="mt-2">  
@@ -80,7 +80,7 @@ export default function FooterBottom(){
                                     </div>
                                 </div>
                             </div>
-                            <div className="mt-4 mb-4 pl-10 pr-10 w-60">
+                            <div className="mt-4 mb-4 w-60">
                                 <h2 className=" font-readex_bold"> Pricing </h2>
                                 <div>
                                     <div className="mt-2"> 
@@ -94,7 +94,7 @@ export default function FooterBottom(){
                                     </div>                
                                 </div>
                             </div>
-                            <div className="mt-4 mb-4 pl-10 pr-10 w-60">
+                            <div className="mt-4 mb-4  pr-10 w-60">
                                 <h2 className=" font-readex_bold"> Resources </h2>
                                 <div>
                                     <div className="mt-2"> 
@@ -105,13 +105,13 @@ export default function FooterBottom(){
                                     </div>
                                 </div>
                             </div> 
-                            <div className="mt-4 mb-4 pl-10 pr-10 w-60">
+                            <div className="mt-4 mb-4  pr-10 w-60">
                                 <h2 className=" font-readex_bold"> Support </h2>
                                 <div className="mt-2">
                                     <a className="text-sm text-slate-600 hover:underline" href="#"> Help Center </a>
                                 </div>
                             </div>
-                            <div className="mt-4 mb-4 pl-10 pr-10 w-60">
+                            <div className="mt-4 mb-4  w-60">
                                 <h2 className=" font-readex_bold">Privacy & Safety</h2>
                                 <div>
                                     <div className="mt-2"> 
@@ -129,8 +129,8 @@ export default function FooterBottom(){
                     </div>
                 </div>
             </div>  
-            <div> 
-                <p>All rights reserved © 2023 Intripid</p>
+            <div className="flex justify-center m-5"> 
+                <p className="text-slate-400 text-xs">All rights reserved © 2023 Intripid</p>
             </div>
         </div>
     )

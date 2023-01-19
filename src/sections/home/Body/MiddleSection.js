@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import leftImage from '../../../utils/InteractiveImages/the-perfect-destination-asset  @x1.png'
 import bookingImage from '../../../utils/images/bookingImage.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faClipboardList } from "@fortawesome/free-solid-svg-icons";
+import { faCheck, faClipboardList, faTree } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function MiddleSection(){
@@ -19,7 +19,7 @@ export default function MiddleSection(){
             </div>
         
             <div className="flex justify-center m-4">
-                <h1 className="font-readex_bold text-slate-700 text-5xl text-center">Reliable & Fast <br/> Recommendations</h1>
+                <h1 className="font-readex_bold text-slate-700 text-4xl text-center">Reliable & Fast <br/> Recommendations</h1>
             </div>
             <div className="flex justify-center">
                 <h1 className="font-readex_light text-sm text-center m-2">
@@ -34,11 +34,10 @@ export default function MiddleSection(){
                         className = "h-96"
                     /> 
                 </div>
-                <div className="m-2"> 
-                    <ul className="nav nav-tabs flex list-none border-b-0 pl-0 mb-4" >
+                <div className="m-2 "> 
+                    <ul className="flex list-none border-b-0 pl-0 mb-4" >
                         <li 
-                            className="nav-item" 
-                            role="presentation"
+                           
                             onClick = {()=>setTab(1)}
                         >
                         <a className={` 
@@ -48,7 +47,7 @@ export default function MiddleSection(){
                             text-xs
                             leading-tight
                             border-x-0 border-t-0 border-transparent
-                            px-2
+                            px-3
                             py-2
                             my-2
                             bg-slate-100
@@ -63,8 +62,8 @@ export default function MiddleSection(){
                             >Personalized</a>
                         </li>
                         <li 
-                            className = "nav-item" 
-                            role = "presentation"
+                            
+                            
                             onClick = {()=> setTab(2)}
                         >
                             <a className= {`
@@ -74,7 +73,7 @@ export default function MiddleSection(){
                                  text-xs
                                  leading-tight
                                  border-x-0 border-t-0 border-transparent
-                                 px-2
+                                 px-3
                                  py-2
                                  my-2
                                  bg-slate-100
@@ -102,7 +101,7 @@ export default function MiddleSection(){
                                     text-xs
                                     leading-tight
                                     border-x-0 border-t-0 border-transparent
-                                    px-2
+                                    px-3
                                     py-2
                                     my-2
                                     bg-slate-100
@@ -119,9 +118,23 @@ export default function MiddleSection(){
                         </ul>
                         <div className="tab-content" >
                             {tab == 1? 
-                            <div className="tab-pane fade show active" id="tabs-home3" role="tabpanel" aria-labelledby="tabs-home-tab3">
-                                Tab 1 content 
-                            </div>: null}
+                                <div> 
+                                    <div className="flex items-center" >
+                                        <FontAwesomeIcon 
+                                            icon={faTree}
+                                        />
+                                        <h2 className="pl-2 font-readex_bold text-2xl"> The perfect Destination </h2>
+                                    </div>
+                                    <div className="w-80 mt-4"> 
+                                        <p style={{fontSize : 10}} className=" text-justify"> A customized and rigorously-evaluated suggestion procedure from an expert travel adviser will be concluded for you in as <b> little as 5-minutes with a single click. </b></p>
+                                    </div>
+                                    <div>
+                                        <button
+                                            className="bg-violet-500 text-white rounded-full text-sm font-readex_medium px-8 p-2 mt-4"
+                                        >Find Your Destination </button>    
+                                    </div>
+                                </div>
+                            :null}
                             {tab == 2 ? 
                             <div className="tab-pane fade" id="tabs-profile3" role="tabpanel" aria-labelledby="tabs-profile-tab3">
                                 Tab 2 content 
