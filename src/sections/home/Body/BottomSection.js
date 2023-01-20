@@ -12,13 +12,13 @@ export default function BottomSection(){
     return(
         <div className="m-10">
             <div className="flex justify-center">
-                <button className="bg-black text-white m-2 p-2 pl-12 pr-12 rounded-full" >How Intripid Compares</button>
+                <button className="bg-black text-xs text-white m-2 p-2 px-8 rounded-full" >How Intripid Compares</button>
             </div>
 
             <div className="flex justify-center">
-                <h1 className="text-5xl text-slate-600 font-readex_bold">Better, Affordable, and <br/> Faster Travels with Us </h1>
+                <h1 className="text-2xl text-slate-600 font-readex_bold">Better, Affordable, and Faster Travels with Us </h1>
             </div>
-            <div className="flex justify-center mt-10">
+            <div className="flex justify-center mt-10 overflow-auto">
                 <div 
                     style={{ backgroundImage: `url(${TableBackground})` }}
                     className = "p-10 bg-contain bg-no-repeat"
@@ -200,8 +200,8 @@ export default function BottomSection(){
             </div>
 
             <div className="flex justify-center mt-10">
-                <div className="flex items-center"> 
-                    <h2 className="text-3xl font-readex_bold">
+                <div className="flex items-center flex-wrap justify-center"> 
+                    <h2 className="text-3xl text-slate-700 font-readex_bold text-center">
                         What They Say About <span className="text-violet-500"> Intripid </span>
                     </h2>
                     <FontAwesomeIcon 
@@ -211,7 +211,7 @@ export default function BottomSection(){
                 </div>
             </div>
             <div className="flex justify-center mt-10">
-                <Slider />
+                {/* <Slider /> */}
             </div>
             <div  className="flex justify-center mt-10">
                 <button className="bg-violet-500 text-white text-xs px-8 p-2 rounded-full hover:bg-violet-700">See Our Travelers' Adventures </button>

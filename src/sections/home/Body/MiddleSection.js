@@ -11,34 +11,34 @@ export default function MiddleSection(){
     return(
         <div>
             <div className="flex justify-center m-4 mt-10">
-            <button
-                className="bg-black text-white text-sm rounded-full p-2 pl-12 pr-12 m-2"
-            > 
-                How Intripid works 
-            </button>
+                <button
+                    className="bg-black text-white text-xs rounded-full p-2 pl-12 pr-12 m-2 hover:bg-violet-700 hover:text-white"
+                > 
+                    How Intripid works 
+                </button>
             </div>
-        
             <div className="flex justify-center m-4">
-                <h1 className="font-readex_bold text-slate-700 text-4xl text-center">Reliable & Fast <br/> Recommendations</h1>
+                <h1 className="font-readex_bold text-slate-700 text-4xl text-center">Reliable & Fast Recommendations</h1>
             </div>
             <div className="flex justify-center">
-                <h1 className="font-readex_light text-sm text-center m-2">
-                    Best travel advisors powerful machine learning and cloud computing tools that evaluate thousands of cities—based on <br/> weather, attractions, travel time, flight availability—in seconds!
-                </h1>
+                <div className="md:w-8/12 lg:w-5/12">
+                    <h1 className="font-readex_light text-sm text-center m-2">
+                        Best travel advisors powerful machine learning and cloud computing tools that evaluate thousands of cities—based on weather, attractions, travel time, flight availability—in seconds!
+                    </h1>
+                </div>
             </div>
-
             <div className="flex justify-center flex-wrap">
                 <div className="m-2">
                     <img 
                         src= {leftImage} 
-                        className = "h-96"
+                        className = ""
                     /> 
                 </div>
-                <div className="m-2 "> 
-                    <ul className="flex list-none border-b-0 pl-0 mb-4" >
+                <div className="m-2 mt-10"> 
+                    <ul className="flex list-none border-b-0 pl-0" >
                         <li 
-                           
                             onClick = {()=>setTab(1)}
+                            className = "md:w-40 text-center "
                         >
                         <a className={` 
                             nav-link
@@ -56,14 +56,13 @@ export default function MiddleSection(){
                             hover:cursor-pointer
                             hover:border-b-orange-500 
                             border-b-4
-                            active:border-b-orange-500 border-b-4
+                            active:border-b-orange-500
                             ${tab ==1? ' border-b-orange-500' : null}
                         `}
                             >Personalized</a>
                         </li>
                         <li 
-                            
-                            
+                            className = "md:w-40 text-center"
                             onClick = {()=> setTab(2)}
                         >
                             <a className= {`
@@ -82,7 +81,7 @@ export default function MiddleSection(){
                                  hover:cursor-pointer
                                  hover:border-b-orange-500 
                                  border-b-4
-                                 active:border-b-orange-500 border-b-4 
+                                 active:border-b-orange-500
                                 ${tab ==2? ' border-b-orange-500' : null}
                             `}
 
@@ -90,7 +89,7 @@ export default function MiddleSection(){
                            >Expert Advisors</a>
                         </li>
                         <li 
-                            className="nav-item" 
+                            className = "md:w-40 text-center"
                             role="presentation"
                             onClick={()=>setTab(3)}
                         >
@@ -110,7 +109,7 @@ export default function MiddleSection(){
                                     hover:cursor-pointer 
                                     hover:border-b-orange-500 
                                     border-b-4
-                                    active:border-b-orange-500 border-b-4
+                                    active:border-b-orange-500
                                     ${tab == 3? ' border-b-orange-500' : null}
                                 `}
                            >Limitless Results</a>
@@ -123,14 +122,14 @@ export default function MiddleSection(){
                                         <FontAwesomeIcon 
                                             icon={faTree}
                                         />
-                                        <h2 className="pl-2 font-readex_bold text-2xl"> The perfect Destination </h2>
+                                        <h2 className="pl-2 font-readex_bold text-2xl text-slate-700"> The perfect Destination </h2>
                                     </div>
                                     <div className="w-80 mt-4"> 
-                                        <p style={{fontSize : 10}} className=" text-justify"> A customized and rigorously-evaluated suggestion procedure from an expert travel adviser will be concluded for you in as <b> little as 5-minutes with a single click. </b></p>
+                                        <p className=" text-justify text-xs font-readex_light"> A customized and rigorously-evaluated suggestion procedure from an expert travel adviser will be concluded for you in as <b> little as 5-minutes with a single click. </b></p>
                                     </div>
                                     <div>
                                         <button
-                                            className="bg-violet-500 text-white rounded-full text-sm font-readex_medium px-8 p-2 mt-4"
+                                            className="bg-violet-500 text-white rounded-full text-xs font-readex_medium px-8 p-2 mt-4"
                                         >Find Your Destination </button>    
                                     </div>
                                 </div>
@@ -146,7 +145,6 @@ export default function MiddleSection(){
                             </div>
                             : null}
                         </div>
-
                 </div>
             </div>
             {/* planning list section */}
@@ -158,7 +156,7 @@ export default function MiddleSection(){
                                 icon={faClipboardList}
                                 className = "text-slate-600 pr-2"
                             />
-                            Planning and <br/> Booking Assistance
+                            Planning and Booking Assistance
                         </h1>
                         <p className="text-sm p-2 mt-4">
                             <FontAwesomeIcon 

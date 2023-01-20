@@ -6,7 +6,7 @@ import TravelIcon from '../../../utils/BrandIcons/Pngs/Travel 1.png';
 import TravelAdvisorIcon from '../../../utils/BrandIcons/Pngs/Travel Advisor 1.png'
 import TravelTicketIcon from '../../../utils/BrandIcons/Pngs/Tickets 1.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import {faStar} from '@fortawesome/free-regular-svg-icons';
 
 
 export default function TopBody(){
@@ -25,7 +25,7 @@ export default function TopBody(){
             
             <div className="flex justify-center pt-10 ">
                 <div className=" max-w-xl m-4 "> 
-                    <h1 className="text-white text-center font-readex_bold text-2xl">Enjoy access to the world's <br/> best travel advisors & travel deals</h1>
+                    <h1 className="text-white text-center font-readex_bold text-4xl ">Enjoy access to the world's best travel advisors & travel deals</h1>
                 </div>
             </div>
              {/* center box */}
@@ -67,7 +67,7 @@ export default function TopBody(){
             </div>
             <div className="flex justify-center flex-wrap m-4">
                 <button
-                    className="bg-white text-sm text-black text-ms px-8  p-2 rounded-full font-readex_medium"
+                    className="bg-white text-xs text-black text-ms px-8  p-2 rounded-full font-readex_medium hover:bg-slate-200"
                 
                 > Be an Exclusive Member Now 
                     <FontAwesomeIcon 

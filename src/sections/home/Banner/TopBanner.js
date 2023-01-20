@@ -3,11 +3,11 @@ import BannerImage from "../../../utils/images/HeroImage.png"
 
 export default function TopBanner(){
     return(
-        <div className="flex justify-center pt-20 ">
+        <div className="flex justify-center pt-4 m-2 ">
             <div className="flex justify-around flex-wrap"> 
-                <div className="w-80 ">
-                    <h1 className="font-readex_bold text-4xl" >Simplify Your Next Travel</h1>
-                    <p style={{fontSize : 8}} className="mt-4 mb-4 font-readex_medium " >Finding and planning a great itinerary can be stressful and time <br/> consuming <b> — Intripid makes it easy </b></p> 
+                <div className="md:w-full lg:w-80">
+                    <h1 className="font-readex_bold text-slate-700 text-6xl md:text-6xl lg:text-4xl">Simplify Your Next Travel</h1>
+                    <p className="mt-4 mb-4 text-xs font-readex_medium">Finding and planning a great itinerary can be stressful and time consuming <b> — Intripid makes it easy </b></p> 
                     <div className="flex"> 
                     <input
                         type="text"
@@ -31,10 +31,10 @@ export default function TopBanner(){
                         placeholder="Enter your email"
                     /> <button className="bg-violet-600 hover:bg-violet-900 text-white p-1 ml-1 rounded-md w-40  "> Join Now </button>
                     </div>
-                    <p  style={{fontSize : 8}} className="text-slate-400 mt-2 mb-2">Become one of our members and get an exclusive travel experience!</p>
+                    <p className="text-slate-500 text-xs mt-2 mb-2">Become one of our members and get an exclusive travel experience!</p>
                 </div>
-                <div className= "relative md:-top-20 " >                  
-                    <img  className="object-fill w-96 " src= {BannerImage} />
+                <div className= "relative lg:-top-10" >                  
+                    <img className="object-fill lg:w-96 " src= {BannerImage} />
                 </div>
             </div>
         </div>

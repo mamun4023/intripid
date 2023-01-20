@@ -17,13 +17,13 @@ export default function Home(){
                 <div className="flex justify-center"> 
                     <TopNavBar />
                 </div>
-                {/* <TopBanner /> */}
+                <TopBanner />
                 {/* body component */}
             </div> 
-            {/* <TopSection /> */}
-            {/* <MiddleSection /> */}
-            {/* <BottomSection /> */}
-            {/* <FooterTop /> */}
+            <TopSection />
+            <MiddleSection />
+            <BottomSection />
+            <FooterTop />
             {/* <FooterBottom/> */}
         </div>
     )
