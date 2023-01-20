@@ -24,7 +24,7 @@ export default function Home(){
             <MiddleSection />
             <BottomSection />
             <FooterTop />
-            {/* <FooterBottom/> */}
+            <FooterBottom/>
         </div>
     )
 }

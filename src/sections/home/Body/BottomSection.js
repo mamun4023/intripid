@@ -195,7 +195,7 @@ export default function BottomSection(){
                 </div>
             </div>
 
-            <div  className="flex justify-center mt-10">
+            <div className="flex justify-center mt-10">
                 <button className="bg-violet-500 text-white text-xs px-8 p-2 rounded-full hover:bg-violet-700">Our Affordable Pricing</button>
             </div>
 
