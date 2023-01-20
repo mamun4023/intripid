@@ -4,8 +4,8 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 export default function LanguageSelector(){
     return(
-        <div className="flex flex-row-reverse max-w-5xl">
-            <div className="mt-2"> 
+        <div className="flex flex-row-reverse m-2">
+            <div> 
                 <FontAwesomeIcon 
                     icon={faGlobe}
                 />

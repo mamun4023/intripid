@@ -9,20 +9,35 @@ export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="w-full bg-white max-w-5xl">
-            <div className="justify-between mx-auto lg:max-w-7xl md:items-center md:flex">
+        
+        <nav className="w-full bg-white max-w-6xl">
+            <div className="justify-between mx-auto lg:max-w-7xl md:items-center lg:flex">
                 <div>
-                    <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                    <div className="flex items-center justify-between  py-3 md:py-5">
                         <a href="#">
-                            <img className="w-20 hidden md:block" src= {DesktopAndTabletLogo} />
-                            <img className="w-10  md:hidden" src= {MobileLogo} />
+                            <img className="w-20 hidden md:w-12  lg:w-20 md:block lg:block" src= {DesktopAndTabletLogo} />
+                            <img className="w-10 md:hidden ml-2" src= {MobileLogo} />
                         </a>
+                        <div className="flex items-center">
                         {!navbar ? 
-                            <div className="md:hidden"> 
-                                <Button title= "Be A Member" />
+                            <div className=" lg:hidden"> 
+                                <button
+                                    className="
+                                        bg-violet-500 
+                                        rounded-full 
+                                        p-2 
+                                        px-4 
+                                        text-xs 
+                                        text-white
+                                        hover:bg-violet-700
+                                        lg:text-sm
+                                    "
+                                > 
+                                    Be A Member
+                                </button>
                             </div>:     
                         null}
-                        <div className="md:hidden">
+                        <div className="lg:hidden">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                                 onClick={() => setNavbar(!navbar)}
@@ -58,40 +73,56 @@ export default function NavBar() {
                                 )}
                             </button>
                         </div>
+                        </div>
                     </div>
                 </div>
-                <div>
+                <div className="ml-2 md:m-0 ">
                     <div
-                        className={`flex-1 justify-self-center pb-3  md:block md:pb-0 md:mt-0 ${
+                        className={`flex-1 justify-self-center pb-3  lg:block md:pb-0 md:mt-0 ${
                             navbar ? "block" : "hidden"
                         }`}
                     >
-                        <ul className="items-center justify-center space-y-2 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-gray-600 hover:text-violet-600">
-                                <a className=" text-sm " href="#">About</a>
+                        <ul className="items-center justify-center lg:flex lg:space-x-6 md:space-y-0">
+                            <li className="text-gray-600 py-1 hover:text-violet-600">
+                                <a className="text-xs lg:pr-2 lg:text-sm focus:text-violet-700" href="#">About</a>
                             </li>
-                            <li className="text-gray-600 hover:text-violet-600">
-                                <a className=" text-sm pr-1" href="#">Travel Solution</a>
+                            <li className="text-gray-600 py-1 hover:text-violet-600">
+                                <a className="text-xs lg:pr-2 lg:text-sm focus:text-violet-700" href="#">Travel Solution</a>
                                 <FontAwesomeIcon 
                                     icon={faChevronDown}
+                                    className = "text-xs"
                                 />
                             </li>
-                            <li className="text-gray-600 hover:text-violet-600">
-                                <a className=" text-sm pr-1" href="#">Our Travelers</a>
+                            <li className="text-gray-600 py-1 hover:text-violet-600">
+                                <a className=" text-xs lg:pr-2  lg:text-sm focus:text-violet-700" href="#">Our Travelers</a>
                             </li>
-                            <li className="text-gray-600 hover:text-violet-600">
-                                <a className=" text-sm " href="#">Pricing</a>
+                            <li className="text-gray-600 py-1 hover:text-violet-600">
+                                <a className=" text-xs lg:pr-2 lg:text-sm focus:text-violet-700" href="#">Pricing</a>
                             </li>
-                            <li className="text-gray-600 hover:text-violet-600">
-                                <a className=" text-sm" href="#">FAQs</a>
+                            <li className="text-gray-600 py-1 hover:text-violet-600">
+                                <a className=" text-xs lg:pr-2 lg:text-sm focus:text-violet-700" href="#">FAQs</a>
                             </li>
-                            <li className=" hidden md:block ">
-                                <Button title= "Be A Member" />
+                            <li className="hidden lg:block ">
+                                <button
+                                    className="
+                                        bg-violet-500 
+                                        rounded-full 
+                                        p-2 
+                                        px-4 
+                                        text-xs 
+                                        text-white
+                                        hover:bg-violet-700
+                                        lg:text-sm
+                                    "
+                                > 
+                                    Be A Member
+                                </button>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
+        
     );
 }

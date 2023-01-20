@@ -6,7 +6,7 @@ import TableBackground from "../../../utils/TableImage/TableBackground.svg"
 import IntripidLogo from '../../../utils/logo/navigationvar-logo-desktop-and-tablet.svg'
 import DotsImage from '../../../utils/TableImage/Dots.svg'
 import { faComments } from "@fortawesome/free-regular-svg-icons";
-// import Slider from '../../../components/slider/slider'
+import Slider from '../../../components/slider/slider'
 
 export default function BottomSection(){
     return(
@@ -211,7 +211,7 @@ export default function BottomSection(){
                 </div>
             </div>
             <div className="flex justify-center mt-10">
-                {/* <Slider /> */}
+                <Slider />
             </div>
             <div  className="flex justify-center mt-10">
                 <button className="bg-violet-500 text-white text-xs px-8 p-2 rounded-full hover:bg-violet-700">See Our Travelers' Adventures </button>
