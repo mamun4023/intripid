@@ -12,7 +12,7 @@ export default function Home(){
     return(
         <div>
             {/* header section */}
-            <div className="md:ml-20 md:mr-20 lg:mr-40"> 
+            <div className=""> 
                 <LanguageSelector />
                 <div className="flex justify-center"> 
                     <TopNavBar />
@@ -20,11 +20,11 @@ export default function Home(){
                 <TopBanner />
                 {/* body component */}
             </div> 
-            <TopSection />
-            <MiddleSection />
-            <BottomSection />
-            <FooterTop />
-            <FooterBottom/>
+            {/* <TopSection /> */}
+            {/* <MiddleSection /> */}
+            {/* <BottomSection /> */}
+            {/* <FooterTop /> */}
+            {/* <FooterBottom/> */}
         </div>
     )
 }

@@ -6,14 +6,13 @@ export default function TopBanner(){
         <div className="flex justify-center pt-4 m-2 ">
             <div className="flex justify-around flex-wrap"> 
                 <div className="md:w-full lg:w-80">
-                    <h1 className="font-readex_bold text-slate-700 text-6xl md:text-6xl lg:text-4xl">Simplify Your Next Travel</h1>
-                    <p className="mt-4 mb-4 text-xs font-readex_medium">Finding and planning a great itinerary can be stressful and time consuming <b> — Intripid makes it easy </b></p> 
+                    <h1 className="font-readex_bold text-fontColor text-6xl md:text-6xl lg:text-4xl">Simplify Your Next Travel</h1>
+                    <p className="mt-4 mb-4 text-fontColor text-xs font-sans_regular">Finding and planning a great itinerary can be stressful and time consuming <b> <i> — Intripid makes it easy </i> </b></p> 
                     <div className="flex"> 
                     <input
                         type="text"
                         className="
-                            form-control
-                            block
+                            
                             w-full
                             p-2
                             text-xm
@@ -29,7 +28,7 @@ export default function TopBanner(){
                         "
                         id="exampleFormControlInput1"
                         placeholder="Enter your email"
-                    /> <button className="bg-violet-600 hover:bg-violet-900 text-white p-1 ml-1 rounded-md w-40  "> Join Now </button>
+                    /> <button className="bg-primary hover:bg-primaryDark font-sans_medium text-xs text-white p-1 ml-1 rounded-md w-40"> Join Now </button>
                     </div>
                     <p className="text-slate-500 text-xs mt-2 mb-2">Become one of our members and get an exclusive travel experience!</p>
                 </div>

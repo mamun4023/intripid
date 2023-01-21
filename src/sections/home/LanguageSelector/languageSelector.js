@@ -4,16 +4,17 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 export default function LanguageSelector(){
     return(
-        <div className="flex flex-row-reverse m-2">
+        <div className="flex flex-row-reverse p-2 pr-3 bg-bgLight">
             <div> 
                 <FontAwesomeIcon 
                     icon={faGlobe}
+                    className = "text-sm text-fontColor"
                 />
                 <select 
                     className="
                         form-select 
-                        text-sm 
-                        font-sans
+                        text-sm
+                        font-sans_regular
                         text-gray-700
                         bg-white
                         transition
@@ -24,8 +25,8 @@ export default function LanguageSelector(){
                         focus:outline-violet-600" 
                         aria-label="Default select example"
                     >
-                        <option value= "English" >English</option>
-                        <option value="Bangla">Bangla</option>
+                        <option className="text-fontColor" value= "English" >English</option>
+                        <option className="text-fontColor" value="Bangla">Bangla</option>
                 </select>
             </div>
         </div>  

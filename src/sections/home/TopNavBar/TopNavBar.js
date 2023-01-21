@@ -10,12 +10,12 @@ export default function NavBar() {
     
     return (
         
-        <nav className="w-full bg-white max-w-6xl">
-            <div className="justify-between mx-auto lg:max-w-7xl md:items-center lg:flex">
+        <nav className="w-full bg-white md:px-5 lg:px-20">
+            <div className="justify-between mx-auto  md:items-center lg:flex">
                 <div>
                     <div className="flex items-center justify-between  py-3 md:py-5">
                         <a href="#">
-                            <img className="w-20 hidden md:w-20 md:block lg:w-20 lg:block" src= {DesktopAndTabletLogo} />
+                            <img className="w-20 hidden md:w-20 md:block lg:w-28 lg:block" src= {DesktopAndTabletLogo} />
                             <img className="w-10 md:hidden ml-2" src= {MobileLogo} />
                         </a>
                         <div className="flex items-center">
@@ -23,14 +23,16 @@ export default function NavBar() {
                             <div className=" lg:hidden"> 
                                 <button
                                     className="
-                                        bg-violet-500 
-                                        rounded-full 
-                                        p-2 
-                                        px-4 
+                                        bg-primary 
+                                        rounded-full
+                                        font-sans_medium
+                                        p-3 
+                                        px-6 
                                         text-xs 
                                         text-white
-                                        hover:bg-violet-700
+                                        hover:bg-primaryDark
                                         lg:text-sm
+                                        
                                     "
                                 > 
                                     Be A Member
@@ -84,34 +86,34 @@ export default function NavBar() {
                     >
                         <ul className="items-center justify-center lg:flex lg:space-x-6 md:space-y-0">
                             <li className="text-gray-600 py-1 hover:text-violet-600">
-                                <a className="text-xs lg:pr-2 lg:text-sm focus:text-violet-700" href="#">About</a>
+                                <a className="text-xs font-sans_medium text-fontColor lg:pr-2 lg:text-sm focus:text-violet-700" href="#">About</a>
                             </li>
                             <li className="text-gray-600 py-1 hover:text-violet-600">
-                                <a className="text-xs lg:pr-2 lg:text-sm focus:text-violet-700" href="#">Travel Solution</a>
+                                <a className="text-xs font-sans_medium text-fontColor  lg:pr-2 lg:text-sm focus:text-violet-700" href="#">Travel Solution</a>
                                 <FontAwesomeIcon 
                                     icon={faChevronDown}
-                                    className = "text-xs"
+                                    className = "text-xs text-fontColor"
                                 />
                             </li>
                             <li className="text-gray-600 py-1 hover:text-violet-600">
-                                <a className=" text-xs lg:pr-2  lg:text-sm focus:text-violet-700" href="#">Our Travelers</a>
+                                <a className=" text-xs font-sans_medium text-fontColor lg:pr-2 lg:text-sm focus:text-violet-700" href="#">Our Travelers</a>
                             </li>
                             <li className="text-gray-600 py-1 hover:text-violet-600">
-                                <a className=" text-xs lg:pr-2 lg:text-sm focus:text-violet-700" href="#">Pricing</a>
+                                <a className=" text-xs font-sans_medium text-fontColor lg:pr-2 lg:text-sm focus:text-violet-700" href="#">Pricing</a>
                             </li>
                             <li className="text-gray-600 py-1 hover:text-violet-600">
-                                <a className=" text-xs lg:pr-2 lg:text-sm focus:text-violet-700" href="#">FAQs</a>
+                                <a className=" text-xs font-sans_medium text-fontColor lg:pr-2 lg:text-sm focus:text-violet-700" href="#">FAQs</a>
                             </li>
                             <li className="hidden lg:block ">
                                 <button
                                     className="
-                                        bg-violet-500 
+                                        bg-primary 
                                         rounded-full 
                                         p-2 
                                         px-4 
                                         text-xs 
                                         text-white
-                                        hover:bg-violet-700
+                                        hover:bg-primaryDark
                                         lg:text-sm
                                     "
                                 > 
