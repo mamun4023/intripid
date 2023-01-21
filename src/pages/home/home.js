@@ -12,11 +12,9 @@ export default function Home(){
     return(
         <div>
             {/* header section */}
-            <div className=""> 
+            <div> 
                 <LanguageSelector />
-                <div className="flex justify-center"> 
-                    <TopNavBar />
-                </div>
+                <TopNavBar />
                 <TopBanner />
                 {/* body component */}
             </div> 

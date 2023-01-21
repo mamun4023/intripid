@@ -11,7 +11,10 @@ module.exports = {
       'bgLight' : '#F8F9FB',
       'white' : '#FFFFFF',
       'fontColor' : '#31374A',
-   
+      'lebelFontColor' : '#9E9E9E',
+      'inputBg' : '#F8F9FB',
+      'inputBorder' : '#E0E0E0'
+  
     },
     extend: {
        fontFamily: {

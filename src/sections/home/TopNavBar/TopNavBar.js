@@ -8,19 +8,18 @@ import Button from "../../../components/Button/Button";
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
     
-    return (
-        
-        <nav className="w-full bg-white md:px-5 lg:px-20">
+    return(
+        <nav className="w-full px-3 bg-white md:px-12 lg:px-20">
             <div className="justify-between mx-auto  md:items-center lg:flex">
                 <div>
                     <div className="flex items-center justify-between  py-3 md:py-5">
                         <a href="#">
-                            <img className="w-20 hidden md:w-20 md:block lg:w-28 lg:block" src= {DesktopAndTabletLogo} />
+                            <img className="w-20 hidden md:w-24 md:block lg:w-28 lg:block" src= {DesktopAndTabletLogo} />
                             <img className="w-10 md:hidden ml-2" src= {MobileLogo} />
                         </a>
                         <div className="flex items-center">
                         {!navbar ? 
-                            <div className=" lg:hidden"> 
+                            <div className="pr-14 md:pr-2 lg:hidden"> 
                                 <button
                                     className="
                                         bg-primary 
@@ -32,7 +31,6 @@ export default function NavBar() {
                                         text-white
                                         hover:bg-primaryDark
                                         lg:text-sm
-                                        
                                     "
                                 > 
                                     Be A Member
