@@ -9,7 +9,7 @@ export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
     
     return(
-        <nav className="w-full px-3 bg-white md:px-10 lg:px-24">
+        <nav className="w-full px-3 bg-white md:px-10 lg:px-24 2xl:px-60">
             <div className="justify-between mx-auto  md:items-center lg:flex">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5">
@@ -84,23 +84,23 @@ export default function NavBar() {
                     >
                         <ul className="items-center justify-center lg:flex lg:space-x-6 md:space-y-0">
                             <li className="text-gray-600 py-1 hover:text-violet-600">
-                                <a className="text-xs font-sans_medium text-fontColor lg:pr-2 lg:text-sm focus:text-violet-700" href="#">About</a>
+                                <a className="text-xs 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm focus:text-violet-700" href="#">About</a>
                             </li>
                             <li className="text-gray-600 py-1 hover:text-violet-600">
-                                <a className="text-xs font-sans_medium text-fontColor  lg:pr-2 lg:text-sm focus:text-violet-700" href="#">Travel Solution</a>
+                                <a className="text-xs 2xl:text-lg font-sans_medium text-fontColor  lg:pr-2 lg:text-sm focus:text-violet-700" href="#">Travel Solution</a>
                                 <FontAwesomeIcon 
                                     icon={faChevronDown}
-                                    className = "text-xs text-fontColor"
+                                    className = "text-xs 2xl:text-lg text-fontColor"
                                 />
                             </li>
                             <li className="text-gray-600 py-1 hover:text-violet-600">
-                                <a className=" text-xs font-sans_medium text-fontColor lg:pr-2 lg:text-sm focus:text-violet-700" href="#">Our Travelers</a>
+                                <a className=" text-xs 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm focus:text-violet-700" href="#">Our Travelers</a>
                             </li>
                             <li className="text-gray-600 py-1 hover:text-violet-600">
-                                <a className=" text-xs font-sans_medium text-fontColor lg:pr-2 lg:text-sm focus:text-violet-700" href="#">Pricing</a>
+                                <a className=" text-xs 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm focus:text-violet-700" href="#">Pricing</a>
                             </li>
                             <li className="text-gray-600 py-1 hover:text-violet-600">
-                                <a className=" text-xs font-sans_medium text-fontColor lg:pr-2 lg:text-sm focus:text-violet-700" href="#">FAQs</a>
+                                <a className=" text-xs 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm focus:text-violet-700" href="#">FAQs</a>
                             </li>
                             <li className="hidden lg:block ">
                                 <button
@@ -108,11 +108,15 @@ export default function NavBar() {
                                         bg-primary 
                                         rounded-full 
                                         p-2 
-                                        px-4 
-                                        text-xs 
+                                        2xl:p-4
+                                        px-4
+                                        2xl:px-10 
+                                        text-xs
+
                                         text-white
                                         hover:bg-primaryDark
                                         lg:text-sm
+                                        2xl:text-lg
                                     "
                                 > 
                                     Be A Member
