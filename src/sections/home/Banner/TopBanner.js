@@ -3,11 +3,11 @@ import BannerImage from "../../../utils/images/HeroImage.png"
 
 export default function TopBanner(){
     return(
-        <div className="flex justify-center px-3 md:px-12 lg:px-20 pt-4 lg:mt-14 m-2 ">
+        <div className="flex justify-center px-3 md:px-8 lg:px-20 pt-10 lg:mt-14 m-2 ">
             <div className="flex justify-between  flex-wrap lg:flex-nowrap"> 
-                <div className="lg:w-7/12 lg:mt-10 xl:w-5/12">
-                    <h1 className="font-readex_bold text-fontColor text-5xl md:text-7xl lg:text-8xl xl:text-8xl">Plan Less.<br/>Travel More.</h1>
-                    <p className="mt-6 mb-4 text-fontColor text-lg md:text-md xl:text-xl font-sans_regular">Finding and planning a great itinerary can be stressful and time consuming <b> <i> — Intripid makes it easy </i> </b></p> 
+                <div className=" md:w-10/12 lg:w-7/12 xl:w-5/12">
+                    <h1 className="font-readex_bold text-fontColor text-5xl md:text-7xl lg:text-7xl">Plan Less.<br/>Travel More.</h1>
+                    <p className="mt-6 mb-4 text-fontColor text-lg md:text-md  font-sans_regular">Finding and planning a great itinerary can be stressful and time consuming <b> <i> — Intripid makes it easy </i> </b></p> 
                     <div className="flex mt-6"> 
                     <input
                         type="text"
@@ -29,7 +29,7 @@ export default function TopBanner(){
                     </div>
                     <p className="text-ms md:text-xs font-sans_medium text-lebelFontColor mt-2 mb-2">Become one of our members and get an exclusive travel experience!</p>
                 </div>
-                <div className= "relative lg:-top-16">                  
+                <div className= "relative lg:-top-36">                  
                     <img className="object-fill lg:w-12/12 " src= {BannerImage} />
                 </div>
             </div>
