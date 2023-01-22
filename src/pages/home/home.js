@@ -18,7 +18,7 @@ export default function Home(){
                 <TopBanner />
                 {/* body component */}
             </div> 
-            {/* <TopSection /> */}
+            <TopSection />
             {/* <MiddleSection /> */}
             {/* <BottomSection /> */}
             {/* <FooterTop /> */}
