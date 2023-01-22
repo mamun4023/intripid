@@ -15,7 +15,8 @@ module.exports = {
       'inputBg' : '#F8F9FB',
       'inputBorder' : '#E0E0E0',
       'info' : '#7E41E0',
-      'error' : '#FF5E67'
+      'error' : '#FF5E67',
+      'footerBg' : '#F9FCFF'
       
     },
     extend: {

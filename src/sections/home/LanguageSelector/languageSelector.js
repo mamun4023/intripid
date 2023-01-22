@@ -16,7 +16,7 @@ export default function LanguageSelector(){
                         text-sm
                         font-sans_regular
                         text-gray-700
-                        bg-white
+                        bg-bgLight
                         transition
                         ease-in-out
                         focus:bg-white 

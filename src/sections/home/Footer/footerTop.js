@@ -18,28 +18,27 @@ export default function FooterTop(){
                     className = "absolute right-0 invisible lg:visible"
                 />
              </div>
-            <div className="flex justify-center flex-wrap">
+            <div className="flex justify-center flex-wrap lg:flex-nowrap">
                 <div>
                     <img 
                         src= {CampaignImage}
-                        // style = {{width : '30rem'}}
-                        className = "w-96 relative  "
+                        className = "w-96 relative lg:w-9/12 "
                     />
                 </div>
-                <div className="mt-28">
+                <div className="mt-16 m-8 md:px-20 lg:w-6/12">
                     <div class="flex justify-center">
-                        <div class="block p-6 rounded-3xl shadow-lg bg-white ">
-                            <h5 class="text-gray-900 text-xl font-readex_bold mb-2">
-                                66 A more compassionate wolrd through increased travel.
+                        <div class="block p-7 rounded-3xl shadow-lg bg-white ">
+                            <h5 class="text-3xl md:text-4xl font-readex_bold text-fontColor mb-2">
+                                A more compassionate wolrd through increased travel.
                             </h5>
-                            <p class="text-gray-700 text-xs">
+                            <p class="text-xs text-fontColor leading-5">
                                 Travel exposes us to the lives of others. Our mission is to encourage people <br/> to travel by making it easier to plan, book, and execute amazing trips.
                             </p>
                         </div>
                     </div>
-                    <div className="flex mt-4">
+                    <div className="flex justify-center my-8 md:justify-start ">
                         <button
-                            className="bg-white text-xs text-black rounded-full px-8 p-2 hover:bg-violet-500 hover:text-white"
+                            className="bg-white text-sm text-fontColor font-sans_medium rounded-full px-12 p-3 w-full md:w-5/12 "
                         > Join Our Campaign </button>
                     </div>    
                 </div>

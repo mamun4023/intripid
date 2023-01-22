@@ -20,8 +20,8 @@ export default function Home(){
             <TopSection />
             <MiddleSection />
             <BottomSection />
-            {/* <FooterTop /> */}
-            {/* <FooterBottom/> */}
+            <FooterTop />
+            <FooterBottom/>
         </div>
     )
 }
