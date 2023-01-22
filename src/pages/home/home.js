@@ -16,10 +16,9 @@ export default function Home(){
                 <LanguageSelector />
                 <TopNavBar />
                 <TopBanner />
-                {/* body component */}
             </div> 
             <TopSection />
-            {/* <MiddleSection /> */}
+            <MiddleSection />
             {/* <BottomSection /> */}
             {/* <FooterTop /> */}
             {/* <FooterBottom/> */}

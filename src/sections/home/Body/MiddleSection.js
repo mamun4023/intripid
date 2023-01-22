@@ -2,8 +2,9 @@ import React, { useState } from "react"
 import leftImage from '../../../utils/InteractiveImages/the-perfect-destination-asset  @x1.png'
 import bookingImage from '../../../utils/images/bookingImage.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faClipboardList, faTree } from "@fortawesome/free-solid-svg-icons";
+import { faCheck, faClipboardList, faTree, faUser } from "@fortawesome/free-solid-svg-icons";
 
+import ProfessionalImage from '../../../utils/InteractiveImages/professional-guides.png'
 
 export default function MiddleSection(){
     const[tab, setTab] = useState(1)
@@ -12,120 +13,102 @@ export default function MiddleSection(){
         <div>
             <div className="flex justify-center m-4 mt-10">
                 <button
-                    className="bg-black text-white text-xs rounded-full p-2 pl-12 pr-12 m-2 hover:bg-violet-700 hover:text-white"
+                    className=" bg-fontColor text-white font-sans_medium text-sm rounded-full p-2 px-8 m-2 hover:bg-violet-700 hover:text-white"
                 > 
                     How Intripid works 
                 </button>
             </div>
             <div className="flex justify-center m-4">
-                <h1 className="font-readex_bold text-slate-700 text-4xl text-center">Reliable & Fast Recommendations</h1>
+                <h1 className="font-readex_bold text-fontColor text-5xl text-center">2 Simple Steps </h1>
             </div>
             <div className="flex justify-center">
                 <div className="md:w-8/12 lg:w-5/12">
-                    <h1 className="font-readex_light text-sm text-center m-2">
+                    <p className="text-md text-fontColor font-sans_regular leading-7 text-center m-2">
                         Best travel advisors powerful machine learning and cloud computing tools that evaluate thousands of cities—based on weather, attractions, travel time, flight availability—in seconds!
-                    </h1>
+                    </p>
                 </div>
             </div>
-            <div className="flex justify-center flex-wrap">
+
+            <div className="flex justify-center flex-wrap lg:flex-nowrap">
                 <div className="m-2">
                     <img 
                         src= {leftImage} 
-                        className = ""
+                        className = "lg:pr-20 "
                     /> 
                 </div>
-                <div className="m-2 mt-10"> 
+           
+                <div className="flex my-8 md:hidden">
+                    <FontAwesomeIcon 
+                        icon={faTree}
+                        className = "text-5xl text-fontColor p-2 "
+                    />
+                    <h1 className="text-5xl p-2 font-readex_bold text-fontColor">Step 1</h1>
+                </div>
+                
+                <div className="flex justify-center md:hidden">
+                    <p className=" text-fontColor text-lg font-sans_regular leading-7 text-center p-4">A customized and rigorously-evaluated suggestion procedure from an expert travel adviser will be concluded for you in as <b> little as 5-minutes with a single click.</b></p>
+                </div>
+                <div className="flex justify-center md:hidden">
+                    <img 
+                        src= {ProfessionalImage}
+                        
+                    />
+                </div>
+                <div className="flex my-8 md:hidden">
+                    <FontAwesomeIcon 
+                        icon={faTree}
+                        className = "text-5xl text-fontColor p-2 "
+                    />
+                    <h1 className="text-5xl p-2 font-readex_bold text-fontColor">Step 2</h1>
+                </div>
+                <div className="flex justify-center md:hidden">
+                    <p className=" text-fontColor text-lg font-sans_regular leading-7 text-center p-4">An experienced Travel Advisor swoops in and reviews the results, using good-ole-human-intelligence™ to make a final recommendation.</p>
+                </div>
+
+                <div className="mt-24 w-full hidden md:block md:w-10/12 rounded-full lg:w-4/12 "> 
                     <ul className="flex list-none border-b-0 pl-0" >
                         <li 
                             onClick = {()=>setTab(1)}
-                            className = "md:w-40 text-center "
+                            className = {` 
+                                md:w-full 
+                                text-center 
+                                bg-inputBg 
+                                rounded-tr-xl 
+                                border-b-8
+                                hover:border-b-primary
+                                ${tab ==1? 'border-b-primary' : 'border-b-inputBg' }
+                            `}
                         >
-                        <a className={` 
-                            nav-link
-                            w-full
-                            block
-                            text-xs
-                            leading-tight
-                            border-x-0 border-t-0 border-transparent
-                            px-3
-                            py-2
-                            my-2
-                            bg-slate-100
-                            hover:border-transparent hover:bg-gray-100
-                            focus:border-transparent
-                            hover:cursor-pointer
-                            hover:border-b-orange-500 
-                            border-b-4
-                            active:border-b-orange-500
-                            ${tab ==1? ' border-b-orange-500' : null}
-                        `}
-                            >Personalized</a>
+                            <a className= "w-full block text-lg font-sans_medium my-2" >Step 1</a>
                         </li>
                         <li 
-                            className = "md:w-40 text-center"
+                            className = {` 
+                                md:w-full 
+                                text-center 
+                                bg-inputBg 
+                                rounded-tr-xl 
+                                border-b-8
+                                hover:border-b-primary
+                                ${tab ==2? 'border-b-primary' : 'border-b-inputBg' }
+                            `}
                             onClick = {()=> setTab(2)}
                         >
-                            <a className= {`
-                                nav-link
-                                 w-full
-                                 block
-                                 text-xs
-                                 leading-tight
-                                 border-x-0 border-t-0 border-transparent
-                                 px-3
-                                 py-2
-                                 my-2
-                                 bg-slate-100
-                                 hover:border-transparent hover:bg-gray-100
-                                 focus:border-transparent
-                                 hover:cursor-pointer
-                                 hover:border-b-orange-500 
-                                 border-b-4
-                                 active:border-b-orange-500
-                                ${tab ==2? ' border-b-orange-500' : null}
-                            `}
-
-                            
-                           >Expert Advisors</a>
+                            <a className= "w-full block text-lg font-sans_medium my-2">Step 2</a>
                         </li>
-                        <li 
-                            className = "md:w-40 text-center"
-                            role="presentation"
-                            onClick={()=>setTab(3)}
-                        >
-                            <a className={` 
-                                    nav-link
-                                    w-full
-                                    block
-                                    text-xs
-                                    leading-tight
-                                    border-x-0 border-t-0 border-transparent
-                                    px-3
-                                    py-2
-                                    my-2
-                                    bg-slate-100
-                                    hover:border-transparent hover:bg-gray-100
-                                    focus:border-transparent
-                                    hover:cursor-pointer 
-                                    hover:border-b-orange-500 
-                                    border-b-4
-                                    active:border-b-orange-500
-                                    ${tab == 3? ' border-b-orange-500' : null}
-                                `}
-                           >Limitless Results</a>
-                        </li>
+                     
                         </ul>
-                        <div className="tab-content" >
+                        <div className="" >
                             {tab == 1? 
-                                <div> 
+                                <div className="py-10"> 
                                     <div className="flex items-center" >
                                         <FontAwesomeIcon 
                                             icon={faTree}
+                                            className = "text-4xl text-fontColor"
                                         />
-                                        <h2 className="pl-2 font-readex_bold text-2xl text-slate-700"> The perfect Destination </h2>
+                                        <h2 className="pl-2 font-readex_bold text-fontColor text-4xl text-slate-700"> The perfect Destination </h2>
                                     </div>
-                                    <div className="w-80 mt-4"> 
-                                        <p className=" text-justify text-xs font-readex_light"> A customized and rigorously-evaluated suggestion procedure from an expert travel adviser will be concluded for you in as <b> little as 5-minutes with a single click. </b></p>
+                                    <div className="py-6"> 
+                                        <p className="text-md font-sans_regular text-fontColor"> A customized and rigorously-evaluated suggestion procedure from an expert travel adviser will be concluded for you in as <b> little as 5-minutes with a single click. </b></p>
                                     </div>
                                     <div>
                                         <button
@@ -139,64 +122,64 @@ export default function MiddleSection(){
                                 Tab 2 content 
                             </div>
                             : null}
-                            {tab ==3 ? 
-                            <div className="tab-pane fade" id="tabs-messages3" role="tabpanel" aria-labelledby="tabs-profile-tab3">
-                                Tab 3 content
-                            </div>
-                            : null}
+                    
                         </div>
                 </div>
             </div>
             {/* planning list section */}
-            <div className="flex justify-center flex-wrap"> 
-                <div className="m-2">
-                    <div className="mt-10">
-                        <h1 className="font-readex_bold text-slate-600 text-3xl">
-                            <FontAwesomeIcon 
-                                icon={faClipboardList}
-                                className = "text-slate-600 pr-2"
-                            />
-                            Planning and Booking Assistance
-                        </h1>
-                        <p className="text-sm p-2 mt-4">
-                            <FontAwesomeIcon 
-                                icon={faCheck}
-                                className = "text-amber-600"
-                            />
-                            &nbsp; Planning the day-to-day details of  trip
-                        </p>
-                        <p className="text-sm p-2">
-                            <FontAwesomeIcon 
-                                icon={faCheck}
-                                className = "text-amber-600"
-                            />
-                            &nbsp; Booking flights, accommodations, and excursions
-                        </p>
-                        <p className="text-sm p-2">
-                            <FontAwesomeIcon 
-                                icon={faCheck}
-                                className = "text-amber-600"
-                            />
-                            &nbsp;  Individual, team,  and corporate trip types and  specializations
-                        </p>
-                        <p className="text-sm p-2"> 
-                            <FontAwesomeIcon 
-                                icon={faCheck}
-                                className = "text-amber-600"
-                            />
-                            &nbsp;  Expert Travel Advisor at transparent hourly rates
-                        </p>
-
-                       <button className="bg-violet-600 text-white p-2 px-8 rounded-full mt-8 hover:bg-violet-700 " >Plan Trip With Us</button>
+            <div className="flex justify-center flex-wrap md:px-10 "> 
+                <div className="m-2 lg:w-5/12">
+                    <div>
+                        <div> 
+                            <h1 className="font-readex_bold text-fontColor p-4 text-5xl">
+                                <FontAwesomeIcon 
+                                    icon={faClipboardList}
+                                    className = "text-slate-600 pr-2"
+                                />
+                                Planning and Booking Assistance
+                            </h1>
+                        </div>
+                        <div className="p-4">
+                            <div className="flex items-start"> 
+                                <FontAwesomeIcon 
+                                    icon={faCheck}
+                                    className = " text-primary text-md mt-3"
+                                />
+                                <p className="text-md font-sans_regular p-2">Planning the day-to-day details of trip</p>
+                            </div>
+                            <div className="flex items-start"> 
+                                <FontAwesomeIcon 
+                                    icon={faCheck}
+                                    className = " text-primary text-md mt-3"
+                                />
+                                <p className="text-md font-sans_regular p-2 "> Booking flights, accommodations, and excursions</p>
+                            </div> 
+                            <div className="flex items-start"> 
+                                <FontAwesomeIcon 
+                                    icon={faCheck}
+                                    className = " text-primary text-md mt-3"
+                                />
+                                <p className="text-md font-sans_regular p-2">Individual, team,  and corporate trip types and  specializations</p>
+                            </div>
+                            <div className="flex items-start"> 
+                                <FontAwesomeIcon 
+                                    icon={faCheck}
+                                    className = " text-primary text-md mt-3"
+                                />
+                                <p className="text-md font-sans_regular p-2"> Expert Travel Advisor at transparent hourly rates</p>
+                            </div>
+                        </div> 
+                        <div className="flex justify-center md:justify-start md:pl-4"> 
+                            <button className="bg-primary hover:bg-primaryDark text-white p-3 px-14 rounded-full font-sans_medium mt-8 " >Plan Trip With Us</button>
+                        </div>        
                     </div>
                 </div>
-                <div className="m-2">
+                <div className="">
                     <img 
                         src= {bookingImage} 
-                        className = "h-96"
+                        className = "lg:w-9/12"
                     />
                 </div>
-            
             </div>
         </div>
     )
