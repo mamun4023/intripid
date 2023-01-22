@@ -13,8 +13,10 @@ module.exports = {
       'fontColor' : '#31374A',
       'lebelFontColor' : '#9E9E9E',
       'inputBg' : '#F8F9FB',
-      'inputBorder' : '#E0E0E0'
-  
+      'inputBorder' : '#E0E0E0',
+      'info' : '#7E41E0',
+      'error' : '#FF5E67'
+      
     },
     extend: {
        fontFamily: {
