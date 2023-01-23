@@ -17,7 +17,7 @@ export default function BottomSection(){
             </div>
 
             {/* table */}
-            {/* <BottomTable /> */}
+            <BottomTable />
             
 
             <div className="flex justify-center flex-wrap mt-10">

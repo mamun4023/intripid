@@ -1,32 +1,30 @@
 import React from "react"
-import { faChartPie, faCheck, faCircleCheck, faClose, faComment, faGauge, faMagnifyingGlass, faUsers, faXmarkCircle } from "@fortawesome/free-solid-svg-icons"
+import { faChartPie, faCheck, faCircleCheck, faClose, faComment, faGauge, faMagnifyingGlass, faMoneyBill, faUsers, faXmarkCircle } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import TableBackground from "../../utils/TableImage/TableBackground.svg"
 import DotsImage from '../../utils/TableImage/Dots.svg'
-
+import IntripidLogo from '../../utils/logo/footer-logo.svg';
 
 export default function Table(){
     return(
         <>
-            <div className="flex justify-center mt-10 ">
+            <div className="flex overflow-auto mt-10">
                 <div 
                     style={{ backgroundImage: `url(${TableBackground})` }}
                     className = "p-10 bg-contain bg-no-repeat"
                 >
                     <div className="relative -top-8 "> 
-                        <div class="flex justify-center  ">
+                        <div class="flex justify-center">
                             <div class="block p-10 rounded-lg shadow-lg bg-white relative ">
                                 <img 
                                     src= {DotsImage}
                                     className = "w-20 absolute top-0 left-10"
                                 />
                               <div className="flex overflow-x-auto">
-                              <div className="rounded-lg p-5 ">
-                                    <div className="pt-12">
-                                        {/* header space */}
-                                    </div>
-                                    <div className="flex items-center justify-end "> 
+                              <div className="rounded-lg p-5">
+                                 
+                                    <div className="flex items-center justify-end mt-16 "> 
                                         <p className="text-xs font-readex_medium text-fontColor p-2"> Speed </p>
                                         <FontAwesomeIcon 
                                             icon={faGauge}
@@ -36,7 +34,7 @@ export default function Table(){
                                     <div className="flex items-center justify-end "> 
                                         <p className="text-xs font-readex_medium text-fontColor p-2"> Cost </p>
                                         <FontAwesomeIcon 
-                                            icon={faGauge}
+                                            icon={faMoneyBill}
                                             className = "text-xs text-fontColor"
                                         />
                                     </div>
@@ -62,14 +60,13 @@ export default function Table(){
                                         />
                                     </div>
                               
-                                   
                                 </div>
                             
                                 <div className="rounded-lg p-5 bg-inputBg  ">
                                     <div className="mb-4">
-                                        <h4 className=" font-readex_bold text-center text-md text-fontColor">Legacy Custom</h4>
+                                        <h4 className="font-readex_bold text-center text-md text-fontColor">Legacy Custom</h4>
                                     </div>
-                                    <div className="flex justify-center pt-2"> 
+                                    <div className="flex justify-center"> 
                                         <p className="font-readex_medium text-xs text-error p-2">Very Slow</p>
                                     </div>
                                     <div className="flex justify-center"> 
@@ -90,7 +87,7 @@ export default function Table(){
                                 </div>
                                 <div className="rounded-lg p-5 bg-inputBg">
                                     <div className="mb-4">
-                                        <h4 className="font-readex_bold text-md text-fontColor">Legacy Packaged</h4>
+                                        <h4 className="font-readex_bold text-md text-center text-fontColor">Legacy Packaged</h4>
                                     </div>
                                     <div className="flex justify-center"> 
                                         <p className="font-readex_medium text-xs text-fontColor p-2">Medium</p>
@@ -115,10 +112,10 @@ export default function Table(){
                                     <div className="mb-4 flex justify-center mt-5">
                                         <img  
                                             src= {IntripidLogo} 
-                                            className = "lg:w-14"
+                                            className = "w-24"
                                         />
                                     </div>
-                                    <div className="flex justify-center"> 
+                                    <div className="flex justify-center pt-2"> 
                                         <p className="font-readex_medium text-xs text-info p-2">Very Fast</p>
                                     </div>
                                     <div className="flex justify-center"> 
