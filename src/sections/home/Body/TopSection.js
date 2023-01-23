@@ -13,7 +13,7 @@ export default function TopBody(){
     return(
         <div 
             style={{ backgroundImage: `url(${BgImage})`}}
-            className = "w-full relative overflow-hidden "
+            className = "w-full relative overflow-hidden"
         >
 
             <div className = "w-48 absolute -left-16 -top-8">
@@ -23,28 +23,28 @@ export default function TopBody(){
                 <img src= {BgTopRight} />
             </div>    
             
-            <div className="flex justify-center pt-10 ">
-                <div className=" max-w-xl px-8 m-7 "> 
-                    <h1 className="text-white text-center font-readex_bold text-3xl ">Enjoy access to the world's best travel advisors & travel deals</h1>
+            <div className="flex justify-center py-10 ">
+                <div className=" max-w-4xl px-8 m-7"> 
+                    <h2 className="text-white text-center font-readex_bold text-3xl md:text-5xl ">Enjoy access to the world's best travel advisors & travel deals</h2>
                 </div>
             </div>
              {/* center box */}
             <div className="flex justify-center flex-wrap">
-                <div className="block p-4 m-4  rounded-3xl shadow-lg bg-white w-80">
+                <div className="block p-4 m-4 lg:m-6 rounded-3xl shadow-lg bg-white w-80 md:w-64">
                     <div className="my-2 p-2"> 
                         <img  
                             src= {TravelIcon} 
                             className = "w-20"
                         />
                     </div>
-                    <div className="pr-16 p-2"> 
+                    <div className="pr-4 p-2"> 
                         <h5 className=" text-fontColor text-2xl leading-tight font-medium mb-2 font-readex_bold">Unlimited & Personalized</h5>
-                        <p className="text-sm font-sans_regular text-fontColor">
+                        <p className="text-sm font-sans_regular text-fontColor leading-6 mt-5">
                             Members get limitless recommendations of destinations based on their customization
                         </p>
                     </div>
                 </div>
-                <div className="block p-4 m-4  rounded-3xl shadow-lg bg-white w-80">
+                <div className="block p-4 m-4 lg:m-6 rounded-3xl shadow-lg bg-white w-80 md:w-64">
                     <div className="my-2 p-2"> 
                         <img  
                             src= {TravelAdvisorIcon} 
@@ -52,16 +52,16 @@ export default function TopBody(){
                         />
                     </div>
                     
-                    <div className="p-2 pr-14"> 
+                    <div className="p-2 pr-4"> 
                         <h5 className="text-fontColor text-2xl mb-2 font-readex_bold">
                             Travel Experts Advisors 
                         </h5>
-                        <p className="text-sm text-fontColor font-sans_regular">
+                        <p className="text-sm text-fontColor font-sans_regular leading-6 mt-5">
                             No more doubts because of professional advices from seasoned travelers
                         </p>
                     </div>
                 </div>
-                <div className="block p-6 m-4 rounded-3xl shadow-lg bg-white w-80">
+                <div className="block p-4 m-4 lg:m-6 rounded-3xl shadow-lg bg-white w-80 md:w-64">
                     <div className="my-2 p-2"> 
                         <img  
                             src= {TravelTicketIcon} 
@@ -69,11 +69,11 @@ export default function TopBody(){
                         />
                     </div>
                     
-                    <div className="p-2 pr-14">
+                    <div className="p-2 pr-4">
                         <h5 className="text-fontColor text-2xl mb-2 font-readex_bold">
                             Killer perks & packages
                         </h5> 
-                        <p className="text-sm font-sans_regular text-fontColor">
+                        <p className="text-sm font-sans_regular leading-6 mt-5 text-fontColor">
                             Free upgrades, vouchers, flash deals, and marvelous experiences!
                         </p>
                     </div>
