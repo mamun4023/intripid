@@ -1,15 +1,16 @@
 import React from "react"
 import { faChartPie, faCheck, faCircleCheck, faClose, faComment, faGauge, faMagnifyingGlass, faMoneyBill, faUsers, faXmarkCircle } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import TableBackground from "../../utils/TableImage/TableBackground.svg"
-import DotsImage from '../../utils/TableImage/Dots.svg'
+import TableBackground from "../../utils/TableImage/TableBackground.svg";
+import DotsImage from '../../utils/TableImage/Dots.svg';
 import IntripidLogo from '../../utils/logo/footer-logo.svg';
+
 
 export default function Table(){
     return(
         <>
-            <div className="flex overflow-auto mt-10">
+            <div className="flex lg:justify-center overflow-auto mt-10">
                 <div 
                     style={{ backgroundImage: `url(${TableBackground})` }}
                     className = "p-10 bg-contain bg-no-repeat"
@@ -22,8 +23,7 @@ export default function Table(){
                                     className = "w-20 absolute top-0 left-10"
                                 />
                               <div className="flex overflow-x-auto">
-                              <div className="rounded-lg p-5">
-                                 
+                              <div className="rounded-lg p-5">                                 
                                     <div className="flex items-center justify-end mt-16 "> 
                                         <p className="text-xs font-readex_medium text-fontColor p-2"> Speed </p>
                                         <FontAwesomeIcon 
@@ -59,14 +59,13 @@ export default function Table(){
                                             className = "text-xs text-fontColor"
                                         />
                                     </div>
-                              
                                 </div>
                             
-                                <div className="rounded-lg p-5 bg-inputBg  ">
+                                <div className="rounded-lg p-5 bg-inputBg">
                                     <div className="mb-4">
                                         <h4 className="font-readex_bold text-center text-md text-fontColor">Legacy Custom</h4>
                                     </div>
-                                    <div className="flex justify-center"> 
+                                    <div className="flex justify-center lg:mt-10"> 
                                         <p className="font-readex_medium text-xs text-error p-2">Very Slow</p>
                                     </div>
                                     <div className="flex justify-center"> 
@@ -89,10 +88,10 @@ export default function Table(){
                                     <div className="mb-4">
                                         <h4 className="font-readex_bold text-md text-center text-fontColor">Legacy Packaged</h4>
                                     </div>
-                                    <div className="flex justify-center"> 
+                                    <div className="flex justify-center lg:mt-10"> 
                                         <p className="font-readex_medium text-xs text-fontColor p-2">Medium</p>
                                     </div>
-                                    <div className="flex justify-center"> 
+                                    <div className="flex justify-center "> 
                                         <p className="font-readex_medium text-xs text-fontColor p-2">Low</p>
                                     </div>
                                     <div className="flex justify-center"> 
@@ -108,7 +107,7 @@ export default function Table(){
                                         />
                                     </div>
                                 </div>
-                                <div style={{borderWidth : 1}} className=" border-fontColor rounded-lg p-2 px-8 w-60 ">
+                                <div className="border border-info rounded-lg p-2 px-8 w-60 ">
                                     <div className="mb-4 flex justify-center mt-5">
                                         <img  
                                             src= {IntripidLogo} 
