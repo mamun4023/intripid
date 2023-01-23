@@ -75,7 +75,7 @@ export default function BottomSection(){
                 </div>
             </div>
             <div className="flex justify-center mt-10">
-                {/* <Slider /> */}
+                <Slider />
             </div>
             <div className="flex justify-center my-10">
                 <button className="bg-primary hover:bg-primaryDark font-sans_medium text-white text-xs px-12 p-3 rounded-full hover:bg-violet-700">See Our Travelers' Adventures </button>

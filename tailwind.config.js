@@ -16,7 +16,8 @@ module.exports = {
       'inputBorder' : '#E0E0E0',
       'info' : '#7E41E0',
       'error' : '#FF5E67',
-      'footerBg' : '#F9FCFF'
+      'footerBg' : '#F9FCFF',
+      'borderColor' : '#eee'
       
     },
     extend: {
