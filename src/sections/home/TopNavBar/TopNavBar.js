@@ -107,9 +107,9 @@ export default function NavBar() {
                                     className="
                                         bg-primary 
                                         rounded-full 
-                                        p-2 
+                                        p-3 
                                         2xl:p-4
-                                        px-4
+                                        px-10
                                         2xl:px-10 
                                         text-xs
                                         text-white
