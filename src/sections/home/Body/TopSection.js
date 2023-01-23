@@ -70,8 +70,8 @@ export default function TopBody(){
                     </div>
                     
                     <div className="p-2 pr-14">
-                        <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2 font-readex_bold">
-                            Killer perks & <br/> packages
+                        <h5 className="text-fontColor text-2xl mb-2 font-readex_bold">
+                            Killer perks & packages
                         </h5> 
                         <p className="text-sm font-sans_regular text-fontColor">
                             Free upgrades, vouchers, flash deals, and marvelous experiences!

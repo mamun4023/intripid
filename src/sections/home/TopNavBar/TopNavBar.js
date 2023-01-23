@@ -39,7 +39,7 @@ export default function NavBar() {
                         null}
                         <div className="lg:hidden">
                             <button
-                                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                                className="p-2 text-fontColor rounded-md outline-none focus:border-fontColor focus:border"
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (
@@ -78,29 +78,29 @@ export default function NavBar() {
                 </div>
                 <div className="ml-2 md:m-0 ">
                     <div
-                        className={`flex-1 justify-self-center pb-3  lg:block md:pb-0 md:mt-0 ${
+                        className={`flex-1 justify-self-center pb-3 lg:block md:pb-0 md:mt-0 ${
                             navbar ? "block" : "hidden"
                         }`}
                     >
                         <ul className="items-center justify-center lg:flex lg:space-x-6 md:space-y-0">
-                            <li className="text-gray-600 py-1 hover:text-violet-600">
-                                <a className="text-xs 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm focus:text-violet-700" href="#">About</a>
+                            <li className="py-1">
+                                <a className="text-xs 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm" href="#">About</a>
                             </li>
-                            <li className="text-gray-600 py-1 hover:text-violet-600">
-                                <a className="text-xs 2xl:text-lg font-sans_medium text-fontColor  lg:pr-2 lg:text-sm focus:text-violet-700" href="#">Travel Solution</a>
+                            <li className="py-1">
+                                <a className="text-xs 2xl:text-lg font-sans_medium text-fontColor  lg:pr-2 lg:text-sm" href="#">Travel Solution</a>
                                 <FontAwesomeIcon 
                                     icon={faChevronDown}
                                     className = "text-xs 2xl:text-lg text-fontColor"
                                 />
                             </li>
-                            <li className="text-gray-600 py-1 hover:text-violet-600">
-                                <a className=" text-xs 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm focus:text-violet-700" href="#">Our Travelers</a>
+                            <li className="py-1">
+                                <a className=" text-xs 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm " href="#">Our Travelers</a>
                             </li>
-                            <li className="text-gray-600 py-1 hover:text-violet-600">
-                                <a className=" text-xs 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm focus:text-violet-700" href="#">Pricing</a>
+                            <li className="py-1 ">
+                                <a className=" text-xs 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm " href="#">Pricing</a>
                             </li>
-                            <li className="text-gray-600 py-1 hover:text-violet-600">
-                                <a className=" text-xs 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm focus:text-violet-700" href="#">FAQs</a>
+                            <li className="py-1">
+                                <a className=" text-xs 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm " href="#">FAQs</a>
                             </li>
                             <li className="hidden lg:block ">
                                 <button
@@ -112,7 +112,6 @@ export default function NavBar() {
                                         px-4
                                         2xl:px-10 
                                         text-xs
-
                                         text-white
                                         hover:bg-primaryDark
                                         lg:text-sm

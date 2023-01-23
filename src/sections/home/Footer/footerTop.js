@@ -9,7 +9,7 @@ export default function FooterTop(){
     return(
         <div 
             style={{ backgroundImage: `url(${BgImage})`}}
-            className="object-scale-down relative overflow-hidden pb-10"
+            className="object-scale-down relative overflow-hidden"
         >
             <div>
                 <img 
@@ -22,7 +22,7 @@ export default function FooterTop(){
                 <div>
                     <img 
                         src= {CampaignImage}
-                        className = "w-96 relative lg:w-9/12 "
+                        className = "w-96 relative lg:w-9/12"
                     />
                 </div>
                 <div className="mt-16 m-8 md:px-20 lg:w-6/12">
@@ -36,7 +36,7 @@ export default function FooterTop(){
                             </p>
                         </div>
                     </div>
-                    <div className="flex justify-center my-8 md:justify-start ">
+                    <div className="flex justify-center my-5  md:justify-start ">
                         <button
                             className="bg-white text-sm text-fontColor font-sans_medium rounded-full px-12 p-3 w-full md:w-5/12 "
                         > Join Our Campaign </button>
