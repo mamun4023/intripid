@@ -12,16 +12,18 @@ export default function Home(){
     return(
         <div>
             {/* header section */}
-            <div> 
-                <LanguageSelector />
+            <LanguageSelector />
+            <div className="sticky top-0 w-full z-50"> 
                 <TopNavBar />
+            </div>
+            <div>  
                 <TopBanner />
-            </div> 
-            <TopSection />
-            <MiddleSection />
-            <BottomSection />
-            <FooterTop />
-            <FooterBottom/>
+                <TopSection />
+                <MiddleSection />
+                <BottomSection />
+                <FooterTop />
+                <FooterBottom/>
+            </div>
         </div>
     )
 }
