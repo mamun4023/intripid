@@ -10,8 +10,8 @@ import TwitterIcon from '../../../utils/BrandIcons/Pngs/SocialIcons/Twitter.png'
 export default function FooterBottom(){   
 
     return(
-        <div className="p-10 2xl:px-40 bg-footerBg"> 
-            <div className="grid grid-cols-1 xl:grid-cols-6">
+        <div className="p-10 xl:px-30 bg-footerBg"> 
+            <div className="grid grid-cols-1 xl:grid-cols-6 md:px-10">
                 <div className="md:col-span-2"> 
                    
                     {/* logo and social logo */}
@@ -141,12 +141,13 @@ export default function FooterBottom(){
                 </div>
                 </div> 
             </div>
-            <div className="mt-10 md:flex justify-between"> 
+            
+            <div className="px-10 mt-10 xl:px-28 md:flex justify-between"> 
                 <div className="flex justify-center" >
-                    <p className="text-xs text-fontColor font-sans_regular p-2"> All rights reserved © 2023 Intripid</p>
+                    <p className="text-xs text-fontColor font-sans_regular"> All rights reserved © 2023 Intripid</p>
                 </div>
-                <div className="flex justify-center">
-                    <p className=" text-xs text-fontColor font-sans_regular p-2"> Privacy/Terms & Conditions</p>
+                <div className="flex justify-center mt-4 md:mt-0">
+                    <p className=" text-xs text-fontColor font-sans_regular"> Privacy/Terms & Conditions</p>
                 </div>
             </div>           
         </div>
