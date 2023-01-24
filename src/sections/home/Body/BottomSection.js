@@ -12,7 +12,7 @@ export default function BottomSection(){
             <div className="flex justify-center">
                 <button className="bg-fontColor font-sans_medium text-xs text-white m-2 p-2 px-8 rounded-full" >How Intripid Compares</button>
             </div>
-            <div className="flex justify-center mt-8">
+            <div className="flex justify-center mt-8 xl:px-80">
                 <h1 className="text-5xl text-center text-fontColor font-readex_bold">Better, Affordable, and Faster Travels with Us </h1>
             </div>
 

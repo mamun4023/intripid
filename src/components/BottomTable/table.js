@@ -10,7 +10,7 @@ import IntripidLogo from '../../utils/logo/footer-logo.svg';
 export default function Table(){
     return(
         <>
-            <div className="flex lg:justify-center overflow-auto mt-10">
+            <div className="flex lg:justify-center overflow-auto mt-20">
                 <div 
                     style={{ backgroundImage: `url(${TableBackground})` }}
                     className = "p-10 bg-contain bg-no-repeat"
@@ -25,35 +25,35 @@ export default function Table(){
                               <div className="flex overflow-x-auto">
                               <div className="rounded-lg p-5">                                 
                                     <div className="flex items-center justify-end mt-16 "> 
-                                        <p className="text-xs font-readex_medium text-fontColor p-2"> Speed </p>
+                                        <p className="text-xs font-readex_bold text-fontColor p-2"> Speed </p>
                                         <FontAwesomeIcon 
                                             icon={faGauge}
                                             className = "text-xs text-fontColor"
                                         />
                                     </div>
                                     <div className="flex items-center justify-end "> 
-                                        <p className="text-xs font-readex_medium text-fontColor p-2"> Cost </p>
+                                        <p className="text-xs font-readex_bold text-fontColor p-2"> Cost </p>
                                         <FontAwesomeIcon 
                                             icon={faMoneyBill}
                                             className = "text-xs text-fontColor"
                                         />
                                     </div>
                                     <div className="flex items-center justify-end "> 
-                                        <p className="text-xs font-readex_medium text-fontColor p-2"> Research  </p>
+                                        <p className="text-xs font-readex_bold text-fontColor p-2"> Research  </p>
                                         <FontAwesomeIcon 
                                             icon={faMagnifyingGlass}
                                             className = "text-xs text-fontColor"
                                         />
                                     </div>
                                     <div className="flex items-center justify-end "> 
-                                        <p className="text-xs font-readex_medium text-fontColor p-2"> Personalization  </p>
+                                        <p className="text-xs font-readex_bold text-fontColor p-2"> Personalization  </p>
                                         <FontAwesomeIcon 
                                             icon={faChartPie}
                                             className = "text-xs text-fontColor"
                                         />
                                     </div>
                                     <div className="flex items-center justify-end "> 
-                                        <p className="text-xs font-readex_medium text-fontColor p-2"> Exports Match  </p>
+                                        <p className="text-xs font-readex_bold text-fontColor p-2"> Exports Match  </p>
                                         <FontAwesomeIcon 
                                             icon={faUsers}
                                             className = "text-xs text-fontColor"
@@ -66,16 +66,16 @@ export default function Table(){
                                         <h4 className="font-readex_bold text-center text-md text-fontColor">Legacy Custom</h4>
                                     </div>
                                     <div className="flex justify-center lg:mt-10"> 
-                                        <p className="font-readex_medium text-xs text-error p-2">Very Slow</p>
+                                        <p className="font-readex_bold text-xs text-error p-2">Very Slow</p>
                                     </div>
                                     <div className="flex justify-center"> 
-                                        <p className="font-readex_medium text-xs text-error p-2">Very High</p>
+                                        <p className="font-readex_bold text-xs text-error p-2">Very High</p>
                                     </div>
                                     <div className="flex justify-center"> 
-                                        <p className="font-readex_medium text-xs text-fontColor p-2">Medium</p>
+                                        <p className="font-readex_bold text-xs text-fontColor p-2">Medium</p>
                                     </div>
                                     <div className="flex justify-center">
-                                        <p className="font-readex_medium text-xs text-fontColor p-2">Medium</p>
+                                        <p className="font-readex_bold text-xs text-fontColor p-2">Medium</p>
                                     </div>
                                     <div className="flex justify-center"> 
                                     <FontAwesomeIcon 
@@ -89,16 +89,16 @@ export default function Table(){
                                         <h4 className="font-readex_bold text-md text-center text-fontColor">Legacy Packaged</h4>
                                     </div>
                                     <div className="flex justify-center lg:mt-10"> 
-                                        <p className="font-readex_medium text-xs text-fontColor p-2">Medium</p>
+                                        <p className="font-readex_bold text-xs text-fontColor p-2">Medium</p>
                                     </div>
                                     <div className="flex justify-center "> 
-                                        <p className="font-readex_medium text-xs text-fontColor p-2">Low</p>
+                                        <p className="font-readex_bold text-xs text-fontColor p-2">Low</p>
                                     </div>
                                     <div className="flex justify-center"> 
-                                        <p className="font-readex_medium text-xs text-error p-2">Very Low</p>
+                                        <p className="font-readex_bold text-xs text-error p-2">Very Low</p>
                                     </div>
                                     <div className="flex justify-center">
-                                        <p className="font-readex_medium text-xs text-error p-2">Very Low</p>
+                                        <p className="font-readex_bold text-xs text-error p-2">Very Low</p>
                                     </div>
                                     <div className="flex justify-center"> 
                                         <FontAwesomeIcon 
@@ -107,7 +107,7 @@ export default function Table(){
                                         />
                                     </div>
                                 </div>
-                                <div className="border border-info rounded-lg p-2 px-8 w-60 ">
+                                <div className="border border-info rounded-lg p-2 w-48 ">
                                     <div className="mb-4 flex justify-center mt-5">
                                         <img  
                                             src= {IntripidLogo} 
@@ -115,16 +115,16 @@ export default function Table(){
                                         />
                                     </div>
                                     <div className="flex justify-center pt-2"> 
-                                        <p className="font-readex_medium text-xs text-info p-2">Very Fast</p>
+                                        <p className="font-readex_bold text-xs text-info p-2">Very Fast</p>
                                     </div>
                                     <div className="flex justify-center"> 
-                                        <p className="font-readex_medium text-xs text-info p-2">Very Low</p>
+                                        <p className="font-readex_bold text-xs text-info p-2">Very Low</p>
                                     </div>
                                     <div className="flex justify-center"> 
-                                        <p className="font-readex_medium text-xs text-info p-2">Very High</p>
+                                        <p className="font-readex_bold text-xs text-info p-2">Very High</p>
                                     </div>
                                     <div className="flex justify-center">
-                                        <p className="font-readex_medium text-xs text-info p-2">Very High</p>
+                                        <p className="font-readex_bold text-xs text-info p-2">Very High</p>
                                     </div>
                                     <div className="flex justify-center"> 
                                     <FontAwesomeIcon 

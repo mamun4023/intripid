@@ -22,7 +22,7 @@ export default function FooterBottom(){
                                 className = "w-40"
                             />
                         </div>
-                        <div className="my-6 w-full pr-2 md:w-7/12">
+                        <div className="my-6 w-full pr-2 md:w-7/12 xl:w-10/12">
                             <p className="text-sm text-fontColor font-sans_regular leading-5">An online platform that encourages travel by removing stress from personal, leisure travel planning. </p>
                         </div>  
                         <div className="flex justify-center md:justify-start lg:justify-start lg:flex-none mt-2">

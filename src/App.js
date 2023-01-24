@@ -5,9 +5,12 @@ import Home from './pages/home/home';
 
 function App() {
   return (
-    <div>
-      <Home />
-    </div>
+    <html class="scroll-smooth hover:scroll-auto">
+       <div>
+        <Home />
+      </div>
+    </html>
+   
   );
 }
 export default App;

@@ -216,7 +216,7 @@ export default function MiddleSection(){
                             <div className="flex items-start"> 
                                 <FontAwesomeIcon 
                                     icon={faCheck}
-                                    className = " text-primary text-md mt-3"
+                                    className = "text-primary text-md mt-3"
                                 />
                                 <p className="text-md font-sans_regular p-2 "> Booking flights, accommodations, and excursions</p>
                             </div> 
