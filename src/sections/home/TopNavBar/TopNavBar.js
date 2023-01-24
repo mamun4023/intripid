@@ -33,7 +33,7 @@ export default function NavBar() {
                                         lg:text-sm
                                     "
                                 > 
-                                    Be A Member
+                                    Be a Member
                                 </button>
                             </div>:     
                         null}

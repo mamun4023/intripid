@@ -8,7 +8,7 @@ import Slider from '../../../components/slider/slider'
 
 export default function BottomSection(){
     return(
-        <div className="m-10">
+        <div className="m-10 mt-20">
             <div className="flex justify-center">
                 <button className="bg-fontColor font-sans_medium text-xs text-white m-2 p-2 px-8 rounded-full" >How Intripid Compares</button>
             </div>

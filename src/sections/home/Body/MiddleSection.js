@@ -11,7 +11,7 @@ export default function MiddleSection(){
 
     return(
         <div>
-            <div className="flex justify-center m-4 mt-10">
+            <div className="flex justify-center m-4 mt-28">
                 <button
                     className=" bg-fontColor text-white font-sans_medium text-sm rounded-full p-2 px-8 m-2 hover:bg-violet-700 hover:text-white"
                 > 
@@ -30,10 +30,10 @@ export default function MiddleSection(){
             </div>
 
             <div className="flex justify-center flex-wrap lg:flex-nowrap">
-                <div className="m-2">
+                <div className="m-2 mt-16">
                     <img 
                         src= {leftImage} 
-                        className = "lg:pr-20 "
+                        className = "lg:pr-20"
                     /> 
                 </div>
            
@@ -46,12 +46,37 @@ export default function MiddleSection(){
                 </div>
                 
                 <div className="flex justify-center md:hidden">
-                    <p className=" text-fontColor text-lg font-sans_regular leading-7 text-center p-4">A customized and rigorously-evaluated suggestion procedure from an expert travel adviser will be concluded for you in as <b> little as 5-minutes with a single click.</b></p>
+                    {/* <p className=" text-fontColor text-lg font-sans_regular leading-7 text-center p-4">
+                        A customized and rigorously-evaluated suggestion procedure from an expert travel adviser will be concluded for you in as <b> little as 5-minutes with a single click.</b>
+                    </p> */}
+                    <p className="text-fontColor text-lg font-sans_regular leading-7 text-center p-4">
+                        Answer a few, quick questions about when you’re available to travel, your budget, etc.
+                    </p>
                 </div>
+                <div className="flex justify-center md:hidden">
+                    <p className="text-fontColor text-lg font-sans_regular leading-7 text-center p-4">
+                    A Travel Advisor will use your answers and Intripid’s augmented intelligence tools to analyze all the places in the world you could go and recommend the perfect destination you should go.
+                    </p>
+                </div>
+                <div className="flex justify-center md:hidden">
+                    <p className="text-fontColor text-lg font-sans_regular leading-7 text-center p-4">
+                        A Travel Advisor will use your answers and Intripid’s augmented intelligence tools to analyze all the places in the world you <b>could</b> go and recommend the perfect destination you <b>should</b> go.
+                    </p>
+                </div>
+                <div className="flex justify-center md:hidden">
+                    <p className="text-fontColor text-lg font-sans_regular leading-7 text-center p-4">
+                        Within 24-hours, you’ll receive an email with the recommended destination, an explanation of why it’s perfect for your trip, photos, some of the top attractions to explore there, etc.
+                    </p>
+                </div>
+                <div className="flex justify-center md:hidden">
+                    <p className="text-fontColor text-lg font-sans_regular leading-7 text-center p-4">
+                        f you don’t love your destination, simply request another — Intripid is so confident in our technology and advisors that you get unlimited recommendations.
+                    </p>
+                </div>
+
                 <div className="flex justify-center md:hidden">
                     <img 
                         src= {ProfessionalImage}
-                        
                     />
                 </div>
                 <div className="flex my-8 md:hidden">
@@ -62,9 +87,32 @@ export default function MiddleSection(){
                     <h1 className="text-5xl p-2 font-readex_bold text-fontColor">Step 2</h1>
                 </div>
                 <div className="flex justify-center md:hidden">
-                    <p className=" text-fontColor text-lg font-sans_regular leading-7 text-center p-4">An experienced Travel Advisor swoops in and reviews the results, using good-ole-human-intelligence™ to make a final recommendation.</p>
+                    {/* <p className=" text-fontColor text-lg font-sans_regular leading-7 text-center p-4">
+                        An experienced Travel Advisor swoops in and reviews the results, using good-ole-human-intelligence™ to make a final recommendation.
+                    </p> */}
+                    <p className=" text-fontColor text-lg font-sans_regular leading-7 text-center p-4">
+                        This is the fun part, and it can be done at your leisure.
+                    </p>
                 </div>
 
+                <div className="flex justify-center md:hidden">
+                    <p className=" text-fontColor text-lg font-sans_regular leading-7 text-center p-4">
+                        You know where & when you’re traveling, now you get to dream and plan the details of your getaway!
+                    </p>
+                </div>
+                <div className="flex justify-center md:hidden">
+                    <p className=" text-fontColor text-lg font-sans_regular leading-7 text-center p-4">
+                        If you want or need help, Intripid can quickly match you with a Travel Advisor who has expertise in your destination — they can help book flights, accommodations, local excursions, etc.
+                    </p>
+                </div>
+                <div className="flex justify-center md:hidden">
+                    <p className=" text-fontColor text-lg font-sans_regular leading-7 text-center p-4">
+                        A Travel Advisor can often secure special deals and perks, so definitely consider hiring one!
+                    </p>
+                </div>
+
+
+                {/* tab sections */}
                 <div className="mt-24 w-full hidden md:block md:w-10/12 rounded-full lg:w-4/12 "> 
                     <ul className="flex list-none border-b-0 pl-0" >
                         <li 
@@ -127,7 +175,7 @@ export default function MiddleSection(){
                 </div>
             </div>
             {/* planning list section */}
-            <div className="flex justify-center flex-wrap md:px-10 "> 
+            <div className="flex justify-center flex-wrap md:px-10 mt-20 "> 
                 <div className="m-2 lg:w-5/12">
                     <div>
                         <div> 
@@ -170,7 +218,7 @@ export default function MiddleSection(){
                             </div>
                         </div> 
                         <div className="flex justify-center md:justify-start md:pl-4"> 
-                            <button className="bg-primary hover:bg-primaryDark text-white p-3 px-14 rounded-full font-sans_medium mt-8 " >Plan Trip With Us</button>
+                            <button className="bg-primary hover:bg-primaryDark text-white p-3 px-14 rounded-full font-sans_medium mt-8 " >Plan Your Trip With Us</button>
                         </div>        
                     </div>
                 </div>

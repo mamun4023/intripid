@@ -37,9 +37,9 @@ export default function TopBody(){
                             className = "w-20"
                         />
                     </div>
-                    <div className="pr-4 p-2"> 
+                    <div className="pr-6 p-2"> 
                         <h5 className=" text-fontColor text-2xl leading-tight font-medium mb-2 font-readex_bold">Unlimited & Personalized</h5>
-                        <p className="text-sm font-sans_regular text-fontColor leading-6 mt-5">
+                        <p className="text-md font-sans_regular text-fontColor leading-6 mt-5">
                             Members get limitless recommendations of destinations based on their customization
                         </p>
                     </div>
@@ -52,11 +52,11 @@ export default function TopBody(){
                         />
                     </div>
                     
-                    <div className="p-2 pr-4"> 
+                    <div className="p-2 pr-6"> 
                         <h5 className="text-fontColor text-2xl mb-2 font-readex_bold">
                             Travel Experts Advisors 
                         </h5>
-                        <p className="text-sm text-fontColor font-sans_regular leading-6 mt-5">
+                        <p className="text-md text-fontColor font-sans_regular leading-6 mt-5">
                             No more doubts because of professional advices from seasoned travelers
                         </p>
                     </div>
@@ -69,11 +69,11 @@ export default function TopBody(){
                         />
                     </div>
                     
-                    <div className="p-2 pr-4">
+                    <div className="p-2 pr-6">
                         <h5 className="text-fontColor text-2xl mb-2 font-readex_bold">
                             Killer perks & packages
                         </h5> 
-                        <p className="text-sm font-sans_regular leading-6 mt-5 text-fontColor">
+                        <p className="text-md font-sans_regular leading-6 mt-5 text-fontColor">
                             Free upgrades, vouchers, flash deals, and marvelous experiences!
                         </p>
                     </div>
@@ -81,7 +81,7 @@ export default function TopBody(){
             </div>
             <div className="flex justify-center flex-wrap m-4 md:mt-16">
                 <button
-                    className="bg-white font-sans_medium text-fontColor text-black text-ms px-8  p-2 rounded-full  hover:bg-slate-200"
+                    className="bg-white font-sans_medium text-fontColor text-black text-ms px-8  p-4 rounded-full  hover:bg-slate-200"
                 
                 > Be an Exclusive Member Now 
                     <FontAwesomeIcon 
