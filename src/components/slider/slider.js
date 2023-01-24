@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faArrowRight, faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
 export default function Slider(){
   const [current, setCurrent] = useState(0)
@@ -24,14 +24,14 @@ export default function Slider(){
 
 
   return(
-    <div>
-      <div>
+    <div className=' flex justify-center lg:w-7/12 2xl:w-5/12'>
+      <div  >
         <div className='border border-borderColor shadow-sm p-10 rounded-xl w-full grid grid-cols-1'>
             {/* image and name and identity */}
             <div className='relative'>
               <div> 
                 <div 
-                  className='absolute -right-16 top-44 bg-info p-2 w-10 h-10 rounded-full'
+                  className='absolute -right-16 top-44 md:top-30 lg:top-24 align-middle bg-info p-2 w-10 h-10 rounded-full'
                   onClick={Next}
                 >
                   <FontAwesomeIcon 
@@ -40,7 +40,7 @@ export default function Slider(){
                   />
                 </div>
                 <div 
-                  className='absolute top-44 -left-16 bg-info p-2 w-10 h-10 rounded-full'
+                  className='absolute top-44 md:top-30 lg:top-24 -left-16 bg-info p-2 w-10 h-10 rounded-full'
                   onClick={Prev}
                 >
                   <FontAwesomeIcon 
@@ -57,22 +57,37 @@ export default function Slider(){
                       {index === current && (
                         <div className='transition-all duration-1000 ease-linear'> 
                           <div className='lg:flex justify-between items-center'> 
-                            <div className='flex justify-center'>
-                                <img 
-                                  src= {slide.profilePic}
-                                  className = "h-40 w-40 rounded-full border-8 border-borderColor"
-                                />
+                            <div className=' flex justify-center lg:grid lg:grid-col-1 lg:w-9/12'>
+                                <div className='flex justify-center'> 
+                                  <img 
+                                    src= {slide.profilePic}
+                                    className = "h-40 w-40 md:h-48 md:w-48 rounded-full border-8 border-borderColor"
+                                  />
+                                </div>
+                                <div className='hidden px-4 lg:block'> 
+                                  <div className='h-1 w-48 m-4 bg-secondary'> </div>
+                                  <div className='h-1 w-24 m-4 bg-secondary'> </div>
+                                  <div className='h-1 w-48 m-4 bg-secondary'> </div>
+                                </div>
                             </div>
-                            <div className='mt-2'>
+                            <div className='mt-2 md:p-10'>
                                 <div className='flex justify-center lg:justify-start'>  
-                                  <div className=" md:flex items-center "> 
-                                    <h1 className='text-center text-xl font-readex_bold text-fontColor'> {slide.name}, </h1>
-                                    <p className='text-center font-readex_medium text-fontColor' > {slide.title} </p>
+                                  <div className=" md:flex items-center"> 
+                                    <h1 className='text-center text-xl md:text-3xl font-readex_bold text-fontColor'>{slide.name}, </h1>
+                                    <p className='text-center pl-2 font-readex_medium md:text-2xl text-fontColor' >{slide.title} </p>
                                   </div>
                                 </div>
-                                <div className='md:flex md:items-center'>
-                                  <h2 className='text-center py-2 font-readex_bold text-3xl text-info md:pr-4'>66</h2>
-                                  <p className='text-left font-sans_medium text-fontColor text-xs leading-5 '>{slide.comment}</p>
+                                <div className='md:flex md:items-center md:mt-6'>
+                                  <div className='flex justify-center lg:pb-20'> 
+                                      <FontAwesomeIcon 
+                                        icon={faQuoteLeft}
+                                        className='text-center py-2 font-readex_bold text-3xl text-info md:pr-4'
+                                      />
+                                     
+                                    </div>
+                                  
+
+                                  <p className='text-left font-sans_medium text-fontColor text-xs md:text-xl leading-5 '>{slide.comment}</p>
                                 </div>
                             </div>
                           </div>
