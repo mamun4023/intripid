@@ -155,9 +155,27 @@ export default function MiddleSection(){
                                         />
                                         <h2 className="pl-2 font-readex_bold text-fontColor text-4xl text-slate-700"> The perfect Destination </h2>
                                     </div>
-                                    <div className="py-6"> 
-                                        <p className="text-md font-sans_regular text-fontColor"> A customized and rigorously-evaluated suggestion procedure from an expert travel adviser will be concluded for you in as <b> little as 5-minutes with a single click. </b></p>
+                                    <div className="mt-10"> 
+                                        <p className="text-md font-sans_regular text-fontColor"> 
+                                            Answer a few, quick questions about when you’re available to travel, your budget, etc.
+                                        </p>
                                     </div>
+                                    <div className="py-4"> 
+                                        <p className="text-md font-sans_regular text-fontColor"> 
+                                            A Travel Advisor will use your answers and Intripid’s augmented intelligence tools to analyze all the places in the world you could go and recommend the perfect destination you should go.
+                                        </p>
+                                    </div>
+                                    <div className="py-4"> 
+                                        <p className="text-md font-sans_regular text-fontColor"> 
+                                            Within 24-hours, you’ll receive an email with the recommended destination, an explanation of why it’s perfect for your trip, photos, some of the top attractions to explore there, etc.
+                                        </p>
+                                    </div>
+                                    <div className="py-4"> 
+                                        <p className="text-md font-sans_regular text-fontColor"> 
+                                            If you don’t love your destination, simply request another — Intripid is so confident in our technology and advisors that you get unlimited recommendations.
+                                        </p>
+                                    </div>
+
                                     <div>
                                         <button
                                             className="bg-violet-500 text-white rounded-full text-xs font-readex_medium px-8 p-2 mt-4"

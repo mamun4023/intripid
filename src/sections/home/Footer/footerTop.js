@@ -38,8 +38,8 @@ export default function FooterTop(){
                     </div>
                     <div className="flex justify-center my-5  md:justify-start ">
                         <button
-                            className="bg-white text-sm text-fontColor font-sans_medium rounded-full px-12 p-3 w-full md:w-5/12 lg:w-6/12 "
-                        > Join Our Campaign </button>
+                            className="bg-white text-md text-fontColor font-sans_medium rounded-full px-12 p-4 w-full md:w-5/12 lg:w-6/12 "
+                        > Join the Mission </button>
                     </div>    
                 </div>
             </div>

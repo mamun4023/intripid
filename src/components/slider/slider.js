@@ -85,9 +85,7 @@ export default function Slider(){
                                       />
                                      
                                     </div>
-                                  
-
-                                  <p className='text-left font-sans_medium text-fontColor text-xs md:text-xl leading-5 '>{slide.comment}</p>
+                                  <p className='text-left font-sans_medium text-fontColor text-md md:text-xl leading-5 '>{slide.comment}</p>
                                 </div>
                             </div>
                           </div>

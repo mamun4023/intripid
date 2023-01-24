@@ -19,7 +19,6 @@ export default function BottomSection(){
             {/* table */}
             <BottomTable />
             
-
             <div className="flex justify-center flex-wrap mt-10">
                 <div class="block p-7 m-2 rounded-lg shadow-md bg-inputBg max-w-xs">
                     <h5 class="text-xl font-readex_bold text-error mb-2">
@@ -77,8 +76,8 @@ export default function BottomSection(){
             <div className="flex justify-center mt-10">
                 <Slider />
             </div>
-            <div className="flex justify-center my-10">
-                <button className="bg-primary hover:bg-primaryDark font-sans_medium text-white text-xs px-12 p-3 rounded-full hover:bg-violet-700">See Our Travelers' Adventures </button>
+            <div className="flex justify-center my-20">
+                <button className="bg-primary hover:bg-primaryDark font-sans_medium text-white text-md px-6 p-4 rounded-full hover:bg-violet-700">See Our Travelers' Adventures </button>
             </div>
         </div>
     )
