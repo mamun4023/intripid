@@ -61,7 +61,15 @@ export default function Slider(){
                                 <div className='flex justify-center'> 
                                   <img 
                                     src= {slide.profilePic}
-                                    className = "h-40 w-40 md:h-48 md:w-48 rounded-full border-8 border-borderColor"
+                                    className ="
+                                      h-40
+                                      w-40 
+                                      md:h-48 
+                                      md:w-48 
+                                      rounded-full 
+                                      border-8 
+                                      border-borderColor 
+                                    "
                                   />
                                 </div>
                                 <div className='hidden px-4 lg:block'> 

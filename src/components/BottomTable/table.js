@@ -13,7 +13,7 @@ export default function Table(){
             <div className="flex lg:justify-center overflow-auto mt-20">
                 <div 
                     style={{ backgroundImage: `url(${TableBackground})` }}
-                    className = "p-10 bg-contain bg-no-repeat"
+                    className = "p-5 bg-contain bg-no-repeat"
                 >
                     <div className="relative -top-8 "> 
                         <div class="flex justify-center">

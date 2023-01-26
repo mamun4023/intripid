@@ -11,19 +11,27 @@ import FooterBottom from '../../sections/home/Footer/footerBottom';
 export default function Home(){
     return(
         <div>
-            {/* header section */}
-            <LanguageSelector />
-            <div className="sticky top-0 w-full z-50"> 
+
+            <div> 
+                <LanguageSelector />
+            </div>
+
+            <div className="sticky top-0 w-full z-20"> 
                 <TopNavBar />
             </div>
+
             <div>  
                 <TopBanner />
+            </div>
+         
+            <div> 
                 <TopSection />
+            </div>
                 <MiddleSection />
                 <BottomSection />
                 <FooterTop />
                 <FooterBottom/>
-            </div>
+            
         </div>
     )
 }
