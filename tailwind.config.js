@@ -30,6 +30,23 @@ module.exports = {
         sans_medium: ["sans_medium", "sans-serif"],
         sans_bold: ["sans_bold", "sans-serif"],
        },
+       spacing: {
+        '100' : '25rem',
+        '110' : '28rem',
+        '128':  '32rem',
+        '136' : '34rem',
+        '140' : '40rem',
+        '150' : '50rem',
+        '160' : '55rem',
+        '165' : '58rem',
+        '170' : '60rem',
+        '175' : '65rem',
+        '180' : '70rem',
+        '190' : '80rem',
+        '200' : '100rem'
+
+
+      }
     },
   },
   plugins: [],

@@ -5,6 +5,7 @@ import React from "react"
 import { faComments } from "@fortawesome/free-regular-svg-icons";
 import BottomTable from '../../../components/BottomTable/table'
 import Slider from '../../../components/slider/slider'
+import Button from "../../../components/Button/Button";
 
 export default function BottomSection(){
     return(
@@ -59,7 +60,9 @@ export default function BottomSection(){
             </div>
 
             <div className="flex justify-center mt-10">
-                <button className="bg-primary text-white font-sans_medium text-xs px-14 p-3 rounded-full hover:bg-primaryDark">Our Affordable Pricing</button>
+                <Button 
+                    title= "Our Affordable Pricing"
+                />
             </div>
 
             <div className="flex justify-center mt-20">
@@ -77,7 +80,9 @@ export default function BottomSection(){
                 <Slider />
             </div>
             <div className="flex justify-center my-20">
-                <button className="bg-primary hover:bg-primaryDark font-sans_medium text-white text-md px-6 p-4 rounded-full hover:bg-violet-700">See Our Travelers' Adventures </button>
+                <Button 
+                    title= "See Our Travelers' Adventures"
+                />
             </div>
         </div>
     )

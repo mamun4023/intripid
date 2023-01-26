@@ -18,41 +18,33 @@ export default function NavBar() {
         <div> 
         <nav className="w-full px-3 bg-white md:px-10 lg:px-24">
             <div className="justify-between mx-auto  md:items-center lg:flex">
+
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5">
                         <a href="#">
                             <img className="w-20 hidden md:w-24 md:block lg:w-40 lg:block" src= {DesktopAndTabletLogo} />
-                            <img className="w-10 md:hidden ml-2" src= {MobileLogo} />
+                            {navbar? 
+                             <img className="w-28 pl-2 md:hidden" src= {DesktopAndTabletLogo} />:
+                             <img className="w-10 md:hidden ml-2" src= {MobileLogo} />
+                            }
                         </a>
                         <div className="flex items-center">
                         {!navbar ? 
                             <div className="pr-14 md:pr-2 lg:hidden"> 
-                                <button
-                                    className="
-                                        bg-primary 
-                                        rounded-full
-                                        font-sans_medium
-                                        p-3 
-                                        px-6 
-                                        text-xs 
-                                        text-white
-                                        hover:bg-primaryDark
-                                        lg:text-sm
-                                    "
-                                > 
-                                    Be a Member
-                                </button>
+                                <Button 
+                                    title= "Be a Member"
+                                />
                             </div>:     
                         null}
                         <div className="lg:hidden">
                             <button
-                                className="p-2 text-fontColor rounded-md outline-none focus:border-fontColor focus:border"
+                                className="p-2 text-fontColor rounded-md outline-none "
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6"
+                                        className="w-7 h-7"
                                         viewBox="0 0 20 20"
                                         fill="currentColor"
                                     >
@@ -65,7 +57,7 @@ export default function NavBar() {
                                 ) : (
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6"
+                                        className="w-8 h-8"
                                         fill="none"
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"
@@ -82,6 +74,8 @@ export default function NavBar() {
                         </div>
                         </div>
                     </div>
+
+
                 </div>
                 <div className="ml-2 md:m-0 ">
                     <div
@@ -105,7 +99,7 @@ export default function NavBar() {
                                
                             </li>
                             {open && 
-                                <div className="lg:hidden">
+                                <div className="lg:hidden overflow-auto">
                                     <DropDownContnt />
                                 </div>
                                 }
@@ -119,23 +113,9 @@ export default function NavBar() {
                                 <a className=" text-sm 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm " href="#">FAQs</a>
                             </li>
                             <li className="hidden lg:block ">
-                                <button
-                                    className="
-                                        bg-primary 
-                                        rounded-full 
-                                        p-3 
-                                        2xl:p-4
-                                        px-10
-                                        2xl:px-10 
-                                        text-xs
-                                        text-white
-                                        hover:bg-primaryDark
-                                        lg:text-sm
-                                        2xl:text-lg
-                                    "
-                                > 
-                                    Be A Member
-                                </button>
+                                <Button 
+                                    title= "Be a Member"
+                                />
                             </li>
                         </ul>
                     </div>
@@ -144,7 +124,10 @@ export default function NavBar() {
 
           
         </nav>
-          {/* submenu  modal*/}
+
+
+
+          {/* Top DropDown menu  modal*/}
 
         <div className=" hidden lg:block">
           <Modal
@@ -170,8 +153,8 @@ export default function NavBar() {
 
 const DropDownContnt = ()=>{
     return(
-        <div className=" overflow-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-5 ">
+        <div className="h-96 overflow-y-scroll">
+            <div className="grid grid-cols-1 lg:grid-cols-5 overflow-auto">
                 <div className=" col-span-2 border-r border-borderColor">
                     <div className="flex justify-between items-center">
                         <div className="p-5"> 
@@ -192,42 +175,42 @@ const DropDownContnt = ()=>{
                 </div>
 
                 <div className=" col-span-3">
-                    <div className="p-5"> 
-                        <div className="flex justify-between items-center p-4 hover:bg-inputBg cursor-pointer ">
+                    <ul className="p-5 overflow-y-scroll"> 
+                        <li className="flex justify-between items-center p-4 hover:bg-inputBg cursor-pointer ">
                             <p className="text-md text-fontColor font-sans_medium"> Personalized Destinations</p>
                             <FontAwesomeIcon 
                                 icon={faTree}
                             />
-                        </div>
-                        <div className="flex justify-between items-center p-4 border-t border-borderColor hover:bg-inputBg cursor-pointer">
+                        </li>
+                        <li className="flex justify-between items-center p-4 border-t border-borderColor hover:bg-inputBg cursor-pointer">
                             <p className="text-md text-fontColor font-sans_medium"> Expert Travel Advisors</p>
                             <FontAwesomeIcon 
                                 icon={faUserTie}
                                 className = "text-md text-fontColor"
                             />
-                        </div>
-                        <div className="flex justify-between items-center p-4 border-t border-borderColor hover:bg-inputBg cursor-pointer">
+                        </li>
+                        <li className="flex justify-between items-center p-4 border-t border-borderColor hover:bg-inputBg cursor-pointer">
                             <p className="text-md text-fontColor font-sans_medium"> Corporate Travel Planning </p>
                             <FontAwesomeIcon 
                                 icon={faHandHoldingDollar}
                                 className = "text-md text-fontColor"
                             />
-                        </div>
-                        <div className="flex justify-between items-center p-4 border-t border-borderColor hover:bg-inputBg cursor-pointer">
+                        </li>
+                        <li className="flex justify-between items-center p-4 border-t border-borderColor hover:bg-inputBg cursor-pointer">
                             <p className="text-md text-fontColor font-sans_medium"> Travel Sponshorship </p>
                             <FontAwesomeIcon 
                                 icon={faHandHoldingDollar}
                                 className = "text-md text-fontColor"
                             />
-                        </div>
-                        <div className="flex justify-between items-center p-4 border-t border-borderColor hover:bg-inputBg cursor-pointer">
+                        </li>
+                        <li className="flex justify-between items-center p-4 border-t border-borderColor hover:bg-inputBg cursor-pointer">
                             <p className="text-md text-fontColor font-sans_medium"> Travel Points & Reward Integration </p>
                             <FontAwesomeIcon 
                                 icon={faPlane}
                                 className = "text-xl text-fontColor"
                             />
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
 
             </div>

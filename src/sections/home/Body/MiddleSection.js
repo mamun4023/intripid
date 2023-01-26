@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faClipboardList, faTree, faUser } from "@fortawesome/free-solid-svg-icons";
 
 import ProfessionalImage from '../../../utils/InteractiveImages/professional-guides.png'
+import Button from "../../../components/Button/Button";
 
 export default function MiddleSection(){
     const[tab, setTab] = useState(1)
@@ -22,7 +23,7 @@ export default function MiddleSection(){
                 <h1 className="font-readex_bold text-fontColor text-5xl text-center">2 Simple Steps </h1>
             </div>
             <div className="flex justify-center">
-                <div className="md:w-8/12 lg:w-5/12">
+                <div className="px-10 md:px-0 md:w-10/12 lg:w-5/12">
                     <p className="text-md text-fontColor font-sans_regular leading-7 text-center m-2">
                         Best travel advisors powerful machine learning and cloud computing tools that evaluate thousands of cities—based on weather, attractions, travel time, flight availability—in seconds!
                     </p>
@@ -236,7 +237,9 @@ export default function MiddleSection(){
                             </div>
                         </div> 
                         <div className="flex justify-center md:justify-start md:pl-4"> 
-                            <button className="bg-primary hover:bg-primaryDark text-white p-3 px-14 rounded-full font-sans_medium mt-8 " >Plan Your Trip With Us</button>
+                           <Button 
+                                title= "Plan Your Trip With Us"
+                           /> 
                         </div>        
                     </div>
                 </div>

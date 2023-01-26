@@ -5,7 +5,7 @@ export default function Button({title}){
         <div className="flex justify-center">
           <button 
             type="button" 
-            className='bg-violet-500 p-2 text-white text-xs  px-8 rounded-full hover:bg-violet-900'
+            className='bg-primary p-3 font-sans_medium text-white text-sm  px-8 rounded-full hover:bg-primaryDark'
             >{title}</button>
       </div>
     )

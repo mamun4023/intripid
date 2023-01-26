@@ -20,7 +20,7 @@ export default function LanguageSelector(){
     return(
         <div className="flex flex-row-reverse bg-bgLight">
             <div 
-                className="flex items-center cursor-pointer p-4 lg:px-10 hover:opacity-20" 
+                className="flex items-center cursor-pointer p-4 px-5 lg:px-10 hover:opacity-20" 
                 onClick={()=> setOpen(true)} 
             > 
                 <FontAwesomeIcon 

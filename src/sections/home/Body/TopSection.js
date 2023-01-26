@@ -23,9 +23,9 @@ export default function TopBody(){
                 <img src= {BgTopRight} />
             </div>    
             
-            <div className="flex justify-center py-10 ">
+            <div className="flex justify-center pt-20 pb-10 ">
                 <div className=" max-w-4xl px-8 m-7"> 
-                    <h2 className="text-white text-center font-readex_bold text-3xl md:text-5xl ">Enjoy access to the world's best travel advisors & travel deals</h2>
+                    <h2 className="text-white text-center font-readex_bold text-4xl md:text-5xl ">Enjoy access to the world's best travel advisors & travel deals</h2>
                 </div>
             </div>
              {/* center box */}
@@ -90,7 +90,7 @@ export default function TopBody(){
                     />
                 </button>
             </div>
-            <div className="flex justify-center flex-wrap m-4 pb-10 md:pb-20">
+            <div className="flex justify-center flex-wrap m-4 pb-10 mb-28 ">
                 <h3 className=" font-sans_medium text-white"> Have a trip for as low as $28! </h3>
             </div>
         </div>

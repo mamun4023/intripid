@@ -11,19 +11,15 @@ import FooterBottom from '../../sections/home/Footer/footerBottom';
 export default function Home(){
     return(
         <div>
-
             <div> 
                 <LanguageSelector />
             </div>
-
             <div className="sticky top-0 w-full z-20"> 
                 <TopNavBar />
             </div>
-
             <div>  
                 <TopBanner />
             </div>
-         
             <div> 
                 <TopSection />
             </div>

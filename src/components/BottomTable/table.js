@@ -22,7 +22,7 @@ export default function Table(){
                                     src= {DotsImage}
                                     className = "w-20 absolute top-0 left-10"
                                 />
-                              <div className="flex overflow-x-auto">
+                              <div className="flex overflow-x-auto w-165">
                               <div className="rounded-lg p-5">                                 
                                     <div className="flex items-center justify-end mt-16 "> 
                                         <p className="text-xs font-readex_bold text-fontColor p-2"> Speed </p>

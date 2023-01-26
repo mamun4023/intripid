@@ -24,9 +24,9 @@ export default function Slider(){
 
 
   return(
-    <div className=' flex justify-center lg:w-7/12 2xl:w-5/12'>
-      <div  >
-        <div className='border border-borderColor shadow-sm p-10 rounded-xl w-full grid grid-cols-1'>
+    <div className=' flex justify-center  lg:w-7/12 2xl:w-5/12 '>
+      <div>
+        <div className='border border-borderColor shadow-sm p-10 rounded-xl h-128 xl:h-96 w-full grid grid-cols-1'>
             {/* image and name and identity */}
             <div className='relative'>
               <div> 
