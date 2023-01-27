@@ -32,7 +32,6 @@ export default function TopBanner(){
                     <img 
                    
                         className="scale-100 md:scale-125 w-140 lg:scale-130 lg:w-150 xl:w-120"
-                        // className=" scale-125"
                         src= {BannerImage} />
                 </div>
             </div>

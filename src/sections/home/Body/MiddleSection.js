@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import leftImage from '../../../utils/InteractiveImages/the-perfect-destination-asset  @x1.png'
-import bookingImage from '../../../utils/images/bookingImage.png';
+import leftImage from '../../../utils/InteractiveImages/the-perfect-destination-asset  @x2.png'
+import BookingAssistanceImage from '../../../utils/images/Planning&BookingAssistanceImage@2x.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faClipboardList, faTree, faUser } from "@fortawesome/free-solid-svg-icons";
 
@@ -34,7 +34,7 @@ export default function MiddleSection(){
                 <div className="lg:px-20 lg:pl-40 lg:mt-40">
                     <img 
                         src= {leftImage} 
-                        className = " lg:w-170 lg:scale-125"
+                        className="scale-100 md:scale-110 w-140 lg:scale-130 lg:w-150 xl:scale-150 xl:pl-10 xl:w-120"
                     /> 
                 </div>
            
@@ -47,9 +47,6 @@ export default function MiddleSection(){
                 </div>
                 
                 <div className="flex justify-center md:hidden">
-                    {/* <p className=" text-fontColor text-lg font-sans_regular leading-7 text-center p-4">
-                        A customized and rigorously-evaluated suggestion procedure from an expert travel adviser will be concluded for you in as <b> little as 5-minutes with a single click.</b>
-                    </p> */}
                     <p className="text-fontColor text-lg font-sans_regular leading-7 text-center p-4">
                         Answer a few, quick questions about when you’re available to travel, your budget, etc.
                     </p>
@@ -194,7 +191,7 @@ export default function MiddleSection(){
                 </div>
             </div>
             {/* planning list section */}
-            <div className="flex justify-center flex-wrap md:px-10 mt-20 "> 
+            <div className="flex justify-center flex-wrap xl:flex-nowrap md:px-4 xl:px-20 mt-20 "> 
                 <div className="m-2 lg:w-5/12">
                     <div>
                         <div> 
@@ -245,8 +242,8 @@ export default function MiddleSection(){
                 </div>
                 <div className="">
                     <img 
-                        src= {bookingImage} 
-                        className = "lg:w-9/12"
+                        src= {BookingAssistanceImage} 
+                        className="scale-100 md:scale-110 w-140 lg:scale-130 lg:w-150 xl:scale-110 xl:pl-10 xl:w-120"
                     />
                 </div>
             </div>
