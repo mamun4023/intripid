@@ -84,14 +84,14 @@ export default function NavBar() {
                         }`}
                     >
                         <ul className="items-center justify-center lg:flex lg:space-x-6 md:space-y-0">
-                            <li className="py-2 border-b-2 border-white hover:border-primary">
-                                <a className="text-md 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm " href="#">About</a>
+                            <li className="py-2">
+                                <a className="text-md 2xl:text-lg font-sans_medium text-fontColor lg:text-sm border-b-2 border-white hover:border-primary " href="#">About</a>
                             </li>
                             <li 
-                                className="py-2 border-b-2 border-white hover:border-primary"
+                                className="py-2"
                                 onClick={()=>setOpen(prev => !prev)}
                             >
-                                <a className="text-md 2xl:text-lg font-sans_medium text-fontColor  lg:pr-2 lg:text-sm" href="#">Travel Solution</a>
+                                <a className="text-md 2xl:text-lg font-sans_medium text-fontColor  lg:text-sm border-b-2 border-white hover:border-primary" href="#">Travel Solution</a>
                                 <FontAwesomeIcon 
                                     icon={faChevronDown}
                                     className = "text-xs 2xl:text-lg pl-1 text-fontColor"
@@ -103,14 +103,14 @@ export default function NavBar() {
                                     <DropDownContnt />
                                 </div>
                                 }
-                            <li className="py-2 border-b-2 border-white hover:border-primary">
-                                <a className=" text-md 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm " href="#">Our Travelers</a>
+                            <li className="py-2 ">
+                                <a className=" text-md 2xl:text-lg font-sans_medium text-fontColor  lg:text-sm border-b-2 border-white hover:border-primary" href="#">Our Travelers</a>
                             </li>
-                            <li className="py-2 border-b-2 border-white hover:border-primary">
-                                <a className="text-md 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm " href="#">Pricing</a>
+                            <li className="py-2">
+                                <a className="text-md 2xl:text-lg font-sans_medium text-fontColor  lg:text-sm border-b-2 border-white hover:border-primary " href="#">Pricing</a>
                             </li>
-                            <li className="py-2 border-b-2 border-white hover:border-primary">
-                                <a className=" text-md 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm " href="#">FAQs</a>
+                            <li className="py-2 ">
+                                <a className=" text-md 2xl:text-lg font-sans_medium text-fontColor lg:text-sm  border-b-2 border-white hover:border-primary" href="#">FAQs</a>
                             </li>
                             <li className="hidden lg:block ">
                                 <Button 
