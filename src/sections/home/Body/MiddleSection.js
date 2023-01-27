@@ -31,10 +31,10 @@ export default function MiddleSection(){
             </div>
 
             <div className="flex justify-center flex-wrap lg:flex-nowrap">
-                <div className="m-2 mt-16">
+                <div className="lg:px-20 lg:pl-40 lg:mt-40">
                     <img 
                         src= {leftImage} 
-                        className = "lg:pr-20"
+                        className = " lg:w-170 lg:scale-125"
                     /> 
                 </div>
            
@@ -114,12 +114,12 @@ export default function MiddleSection(){
 
 
                 {/* tab sections */}
-                <div className="mt-24 w-full hidden md:block md:w-10/12 rounded-full lg:w-4/12 "> 
-                    <ul className="flex list-none border-b-0 pl-0" >
+                <div className=" mt-24 w-full hidden md:block rounded-full "> 
+                    <ul className="flex list-none border-b-0 pl-0  md:px-10 xl:px-0 xl:pr-24" >
                         <li 
                             onClick = {()=>setTab(1)}
                             className = {` 
-                                md:w-full 
+                                w-6/12
                                 text-center 
                                 bg-inputBg 
                                 rounded-tr-xl 
@@ -128,11 +128,11 @@ export default function MiddleSection(){
                                 ${tab ==1? 'border-b-primary' : 'border-b-inputBg' }
                             `}
                         >
-                            <a className= "w-full block text-lg font-sans_medium my-2" >Step 1</a>
+                            <a className= "w-full block text-xl font-sans_medium my-2" >Step 1</a>
                         </li>
                         <li 
                             className = {` 
-                                md:w-full 
+                                w-6/12
                                 text-center 
                                 bg-inputBg 
                                 rounded-tr-xl 
@@ -142,11 +142,11 @@ export default function MiddleSection(){
                             `}
                             onClick = {()=> setTab(2)}
                         >
-                            <a className= "w-full block text-lg font-sans_medium my-2">Step 2</a>
+                            <a className= "w-full block text-xl font-sans_medium my-2">Step 2</a>
                         </li>
                      
                         </ul>
-                        <div className="" >
+                        <div className="p-10 xl:p-0 xl:pr-20" >
                             {tab == 1? 
                                 <div className="py-10"> 
                                     <div className="flex items-center" >

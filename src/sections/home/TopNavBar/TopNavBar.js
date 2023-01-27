@@ -1,5 +1,5 @@
 import React,{ useState } from "react";
-import {faCheck, faChevronDown, faTree , faUserTie, faHandHoldingDollar, faPlane} from "@fortawesome/free-solid-svg-icons";
+import {faCheck, faChevronDown, faTree , faUserTie, faHandHoldingDollar, faPlane, faBuilding} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DesktopAndTabletLogo from '../../../utils/logo/navigationvar-logo-desktop-and-tablet.svg';
 import MobileLogo from '../../../utils/logo/navigationbar-logo-mobile.svg';
@@ -85,16 +85,16 @@ export default function NavBar() {
                     >
                         <ul className="items-center justify-center lg:flex lg:space-x-6 md:space-y-0">
                             <li className="py-2 border-b-2 border-white hover:border-primary">
-                                <a className="text-sm 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm " href="#">About</a>
+                                <a className="text-md 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm " href="#">About</a>
                             </li>
                             <li 
                                 className="py-2 border-b-2 border-white hover:border-primary"
                                 onClick={()=>setOpen(prev => !prev)}
                             >
-                                <a className="text-sm 2xl:text-lg font-sans_medium text-fontColor  lg:pr-2 lg:text-sm" href="#">Travel Solution</a>
+                                <a className="text-md 2xl:text-lg font-sans_medium text-fontColor  lg:pr-2 lg:text-sm" href="#">Travel Solution</a>
                                 <FontAwesomeIcon 
                                     icon={faChevronDown}
-                                    className = "text-xs 2xl:text-lg text-fontColor"
+                                    className = "text-xs 2xl:text-lg pl-1 text-fontColor"
                                 />
                                
                             </li>
@@ -104,13 +104,13 @@ export default function NavBar() {
                                 </div>
                                 }
                             <li className="py-2 border-b-2 border-white hover:border-primary">
-                                <a className=" text-sm 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm " href="#">Our Travelers</a>
+                                <a className=" text-md 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm " href="#">Our Travelers</a>
                             </li>
                             <li className="py-2 border-b-2 border-white hover:border-primary">
-                                <a className="text-sm 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm " href="#">Pricing</a>
+                                <a className="text-md 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm " href="#">Pricing</a>
                             </li>
                             <li className="py-2 border-b-2 border-white hover:border-primary">
-                                <a className=" text-sm 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm " href="#">FAQs</a>
+                                <a className=" text-md 2xl:text-lg font-sans_medium text-fontColor lg:pr-2 lg:text-sm " href="#">FAQs</a>
                             </li>
                             <li className="hidden lg:block ">
                                 <Button 
@@ -153,12 +153,12 @@ export default function NavBar() {
 
 const DropDownContnt = ()=>{
     return(
-        <div className="h-96 overflow-y-scroll">
+        <div className="h-96 overflow-y-scroll ">
             <div className="grid grid-cols-1 lg:grid-cols-5 overflow-auto">
-                <div className=" col-span-2 border-r border-borderColor">
-                    <div className="flex justify-between items-center">
-                        <div className="p-5"> 
-                            <h3 className=" font-readex_bold text-2xl text-primary p-2"> Travel Solutions </h3>
+                <div className=" col-span-2 lg:border-r border-borderColor px-2">
+                    <div className="flex justify-between items-center  xl:pt-2 ">
+                        <div className="px-5"> 
+                            <h3 className=" font-readex_bold text-xl lg:text-2xl text-primary p-2"> Travel Solutions </h3>
                         </div>
                         <div className="p-5">
                             <img 
@@ -167,8 +167,8 @@ const DropDownContnt = ()=>{
                             />
                         </div>
                     </div>
-                    <div className="px-5 ">
-                        <p className="text-md text-fontColor font-sans_regular p-2 leading-7"> 
+                    <div className="px-5 w-100 xl:w-full ">
+                        <p className="text-sm md:text-md text-fontColor font-sans_regular px-2 leading-7"> 
                             Our solutions are designed primarily to assist travelers  by providing solutions  that takes the stress and burden of the upfront leisure travel planning.
                         </p>
                     </div>
@@ -177,37 +177,37 @@ const DropDownContnt = ()=>{
                 <div className=" col-span-3">
                     <ul className="p-5 overflow-y-scroll"> 
                         <li className="flex justify-between items-center p-4 hover:bg-inputBg cursor-pointer ">
-                            <p className="text-md text-fontColor font-sans_medium"> Personalized Destinations</p>
+                            <p className=" text-sm md:text-md text-fontColor font-sans_medium"> Personalized Destinations</p>
                             <FontAwesomeIcon 
                                 icon={faTree}
                             />
                         </li>
                         <li className="flex justify-between items-center p-4 border-t border-borderColor hover:bg-inputBg cursor-pointer">
-                            <p className="text-md text-fontColor font-sans_medium"> Expert Travel Advisors</p>
+                            <p className="text-sm md:text-md text-fontColor font-sans_medium"> Expert Travel Advisors</p>
                             <FontAwesomeIcon 
                                 icon={faUserTie}
                                 className = "text-md text-fontColor"
                             />
                         </li>
                         <li className="flex justify-between items-center p-4 border-t border-borderColor hover:bg-inputBg cursor-pointer">
-                            <p className="text-md text-fontColor font-sans_medium"> Corporate Travel Planning </p>
+                            <p className="text-sm md:text-md text-fontColor font-sans_medium"> Corporate Travel Planning </p>
                             <FontAwesomeIcon 
-                                icon={faHandHoldingDollar}
-                                className = "text-md text-fontColor"
+                                icon={faBuilding}
+                                className = "text-sm md:text-md text-fontColor"
                             />
                         </li>
                         <li className="flex justify-between items-center p-4 border-t border-borderColor hover:bg-inputBg cursor-pointer">
-                            <p className="text-md text-fontColor font-sans_medium"> Travel Sponshorship </p>
+                            <p className="text-sm md:text-md text-fontColor font-sans_medium"> Travel Sponshorship </p>
                             <FontAwesomeIcon 
                                 icon={faHandHoldingDollar}
-                                className = "text-md text-fontColor"
+                                className = "text-sm md:text-md text-fontColor"
                             />
                         </li>
                         <li className="flex justify-between items-center p-4 border-t border-borderColor hover:bg-inputBg cursor-pointer">
-                            <p className="text-md text-fontColor font-sans_medium"> Travel Points & Reward Integration </p>
+                            <p className="text-sm md:text-md text-fontColor font-sans_medium"> Travel Points & Reward Integration </p>
                             <FontAwesomeIcon 
                                 icon={faPlane}
-                                className = "text-xl text-fontColor"
+                                className = "text-sm md:text-md text-fontColor"
                             />
                         </li>
                     </ul>
