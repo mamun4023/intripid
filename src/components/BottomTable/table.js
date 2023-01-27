@@ -24,35 +24,35 @@ export default function Table(){
                                 />
                               <div className="flex overflow-x-auto w-180 h-100">
                               <div className="rounded-lg p-10">                                 
-                                    <div className="flex items-center justify-end mt-28 "> 
+                                    <div className="flex items-center justify-end mt-24 pt-1 "> 
                                         <p className="text-lg font-readex_bold text-fontColor p-2"> Speed </p>
                                         <FontAwesomeIcon 
                                             icon={faGauge}
                                             className = "text-lg text-fontColor"
                                         />
                                     </div>
-                                    <div className="flex items-center justify-end "> 
+                                    <div className="flex items-center justify-end py-1 "> 
                                         <p className="text-lg font-readex_bold text-fontColor p-2"> Cost </p>
                                         <FontAwesomeIcon 
                                             icon={faMoneyBill}
                                             className = "text-lg text-fontColor"
                                         />
                                     </div>
-                                    <div className="flex items-center justify-end "> 
+                                    <div className="flex items-center justify-end py-1"> 
                                         <p className="text-lg font-readex_bold text-fontColor p-2"> Research  </p>
                                         <FontAwesomeIcon 
                                             icon={faMagnifyingGlass}
                                             className = "text-lg text-fontColor"
                                         />
                                     </div>
-                                    <div className="flex items-center justify-end "> 
+                                    <div className="flex items-center justify-end py-1"> 
                                         <p className="text-lg font-readex_bold text-fontColor p-2"> Personalization  </p>
                                         <FontAwesomeIcon 
                                             icon={faChartPie}
                                             className = "text-lg text-fontColor"
                                         />
                                     </div>
-                                    <div className="flex items-center justify-end "> 
+                                    <div className="flex items-center justify-end py-1"> 
                                         <p className="text-lg font-readex_bold text-fontColor p-2"> Exports Match  </p>
                                         <FontAwesomeIcon 
                                             icon={faUsers}
@@ -65,7 +65,7 @@ export default function Table(){
                                     <div className="mb-4">
                                         <h4 className="font-readex_bold text-center text-4xl text-fontColor">Legacy Custom</h4>
                                     </div>
-                                    <div className="flex justify-center lg:mt-10 py-3"> 
+                                    <div className="flex justify-center mt-9 py-3"> 
                                         <p className="font-readex_bold text-lg text-error">Very Slow</p>
                                     </div>
                                     <div className="flex justify-center py-3"> 
@@ -74,21 +74,21 @@ export default function Table(){
                                     <div className="flex justify-center py-3"> 
                                         <p className="font-readex_bold text-lg text-fontColor">Medium</p>
                                     </div>
-                                    <div className="flex justify-center">
+                                    <div className="flex justify-center py-3">
                                         <p className="font-readex_bold text-lg text-fontColor">Medium</p>
                                     </div>
                                     <div className="flex justify-center py-3"> 
                                     <FontAwesomeIcon 
                                         icon={faClose}
-                                        className="text-red-600 py-3 text-lg"
+                                        className="text-red-600 text-lg"
                                     />
                                     </div>
                                 </div>
                                 <div className="rounded-lg p-5 bg-inputBg">
                                     <div className="mb-4">
-                                        <h4 className="font-readex_bold text-center text-md text-3xl text-fontColor">Legacy Packaged</h4>
+                                        <h4 className="font-readex_bold text-center text-md text-4xl text-fontColor">Legacy Packaged</h4>
                                     </div>
-                                    <div className="flex justify-center py-3 lg:mt-10"> 
+                                    <div className="flex justify-center py-3 mt-9"> 
                                         <p className="font-readex_bold text-lg text-fontColor">Medium</p>
                                     </div>
                                     <div className="flex justify-center py-3 "> 
@@ -114,7 +114,7 @@ export default function Table(){
                                             className = "w-40"
                                         />
                                     </div>
-                                    <div className="flex justify-center py-3"> 
+                                    <div className="flex justify-center py-3 mt-5"> 
                                         <p className="font-readex_bold text-lg text-info">Very Fast</p>
                                     </div>
                                     <div className="flex justify-center py-3"> 
