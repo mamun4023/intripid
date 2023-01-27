@@ -153,10 +153,10 @@ export default function NavBar() {
 
 const DropDownContnt = ()=>{
     return(
-        <div className="h-96 ">
-            <div className="grid grid-cols-1 lg:grid-cols-5 ">
-                <div className=" col-span-2 lg:border-r border-borderColor px-2">
-                    <div className="flex justify-between items-center  xl:pt-2 ">
+        <div className="h-96  overflow-y-scroll  xl:overflow-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-5  ">
+                <div className="col-span-2 lg:border-r border-borderColor px-2">
+                    <div className="flex justify-between items-center xl:pt-2 ">
                         <div className="px-5"> 
                             <h3 className=" font-readex_bold text-xl lg:text-2xl text-primary p-2"> Travel Solutions </h3>
                         </div>
@@ -174,8 +174,8 @@ const DropDownContnt = ()=>{
                     </div>
                 </div>
 
-                <div className=" col-span-3">
-                    <ul className="p-5 "> 
+                <div className="col-span-3">
+                    <ul className="p-5"> 
                         <li className="flex justify-between items-center p-4 hover:bg-inputBg cursor-pointer ">
                             <p className=" text-sm md:text-md text-fontColor font-sans_medium"> Personalized Destinations</p>
                             <FontAwesomeIcon 
