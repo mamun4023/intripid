@@ -99,7 +99,7 @@ export default function NavBar() {
                                
                             </li>
                             {open && 
-                                <div className="lg:hidden overflow-auto">
+                                <div className="lg:hidden">
                                     <DropDownContnt />
                                 </div>
                                 }
@@ -153,8 +153,8 @@ export default function NavBar() {
 
 const DropDownContnt = ()=>{
     return(
-        <div className="h-96 overflow-y-scroll ">
-            <div className="grid grid-cols-1 lg:grid-cols-5 overflow-auto">
+        <div className="h-96 ">
+            <div className="grid grid-cols-1 lg:grid-cols-5 ">
                 <div className=" col-span-2 lg:border-r border-borderColor px-2">
                     <div className="flex justify-between items-center  xl:pt-2 ">
                         <div className="px-5"> 
@@ -175,7 +175,7 @@ const DropDownContnt = ()=>{
                 </div>
 
                 <div className=" col-span-3">
-                    <ul className="p-5 overflow-y-scroll"> 
+                    <ul className="p-5 "> 
                         <li className="flex justify-between items-center p-4 hover:bg-inputBg cursor-pointer ">
                             <p className=" text-sm md:text-md text-fontColor font-sans_medium"> Personalized Destinations</p>
                             <FontAwesomeIcon 
