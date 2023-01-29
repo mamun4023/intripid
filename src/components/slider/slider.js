@@ -24,14 +24,14 @@ export default function Slider(){
 
 
   return(
-    <div className=' flex justify-center  lg:w-7/12 2xl:w-5/12 '>
+    <div className=' flex justify-center w-80 '>
       <div>
         <div className='border border-borderColor shadow-sm p-10 rounded-xl h-128 xl:h-96 w-full grid grid-cols-1'>
             {/* image and name and identity */}
             <div className='relative'>
               <div> 
                 <div 
-                  className='absolute -right-16 top-44 md:top-30 lg:top-24 align-middle bg-info p-2 w-10 h-10 rounded-full'
+                  className='absolute -right-14 top-44 md:top-30 lg:top-24 align-middle bg-info p-2 w-10 h-10 rounded-full'
                   onClick={Next}
                 >
                   <FontAwesomeIcon 
@@ -40,7 +40,7 @@ export default function Slider(){
                   />
                 </div>
                 <div 
-                  className='absolute top-44 md:top-30 lg:top-24 -left-16 bg-info p-2 w-10 h-10 rounded-full'
+                  className='absolute top-44 md:top-30 lg:top-24 -left-14 bg-info p-2 w-10 h-10 rounded-full'
                   onClick={Prev}
                 >
                   <FontAwesomeIcon 

@@ -10,7 +10,8 @@ import TwitterIcon from '../../../utils/BrandIcons/Pngs/SocialIcons/Twitter.png'
 export default function FooterBottom(){   
 
     return(
-        <div className=" px-6 md:px-10 lg:p-3 py-14 bg-footerBg"> 
+        <div className="flex justify-center"> 
+        <div className=" w-200 px-6  md:px-10 lg:p-3 py-14 bg-footerBg"> 
             <div className="grid grid-cols-1 xl:grid-cols-6">
                 <div className="md:col-span-2"> 
                    
@@ -150,6 +151,7 @@ export default function FooterBottom(){
                     <p className=" text-xs text-fontColor font-sans_regular"> Privacy/Terms & Conditions</p>
                 </div>
             </div>           
+        </div>
         </div>
     )
 }

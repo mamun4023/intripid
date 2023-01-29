@@ -20,13 +20,13 @@ export default function Home(){
             <div>  
                 <TopBanner />
             </div>
-            <div> 
+           
                 <TopSection />
-            </div>
                 <MiddleSection />
-                <BottomSection />
-                <FooterTop />
-                <FooterBottom/>
+
+                {/* <BottomSection /> */}
+                {/* <FooterTop /> */}
+                {/* <FooterBottom/> */}
             
         </div>
     )

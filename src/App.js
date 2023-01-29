@@ -5,11 +5,11 @@ import Home from './pages/home/home';
 
 function App() {
   return (
-    <html class="scroll-smooth hover:scroll-auto">
-       <div>
+ 
+       <div className='transition-all'>
         <Home />
       </div>
-    </html>
+   
    
   );
 }

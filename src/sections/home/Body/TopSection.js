@@ -11,9 +11,10 @@ import {faStar} from '@fortawesome/free-regular-svg-icons';
 
 export default function TopBody(){
     return(
+        <div className="flex justify-center"> 
         <div 
             style={{ backgroundImage: `url(${BgImage})`}}
-            className = "w-full relative overflow-hidden"
+            className = "w-200 relative overflow-hidden"
         >
 
             <div className = "w-48 absolute -left-16 -top-8">
@@ -93,6 +94,7 @@ export default function TopBody(){
             <div className="flex justify-center flex-wrap m-4 pb-10 mb-28 ">
                 <h3 className=" font-sans_medium text-white"> Have a trip for as low as $28! </h3>
             </div>
+        </div>
         </div>
         
     )

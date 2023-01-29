@@ -7,9 +7,10 @@ import DotWash from '../../../utils/CampaignImages/Dotswashi.png'
 export default function FooterTop(){
     
     return(
+        <div className="flex justify-center"> 
         <div 
             style={{ backgroundImage: `url(${BgImage})`}}
-            className="object-scale-down relative overflow-hidden bg-no-repeat"
+            className="object-scale-down  relative overflow-hidden bg-no-repeat w-200"
         >
             <div>
                 <img 
@@ -43,6 +44,7 @@ export default function FooterTop(){
                     </div>    
                 </div>
             </div>
+        </div>
         </div>
     )
 }

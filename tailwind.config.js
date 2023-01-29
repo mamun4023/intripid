@@ -13,13 +13,13 @@ module.exports = {
       'white' : '#FFFFFF',
       'fontColor' : '#31374A',
       'lebelFontColor' : '#9E9E9E',
-      'inputBg' : '#F8F9FB',
+      // 'inputBg' : '#F8F9FB',
       'inputBorder' : '#E0E0E0',
       'info' : '#7E41E0',
       'error' : '#FF5E67',
       'footerBg' : '#F9FCFF',
       'borderColor' : '#eee'
-      
+
     },
     extend: {
        fontFamily: {
@@ -31,6 +31,8 @@ module.exports = {
         sans_bold: ["sans_bold", "sans-serif"],
        },
        spacing: {
+        '85' : '21rem',
+        '90' : '22rem',
         '100' : '25rem',
         '110' : '28rem',
         '128':  '32rem',
@@ -44,8 +46,9 @@ module.exports = {
         '180' : '70rem',
         '190' : '80rem',
         '200' : '100rem'
-
-
+      },
+      scale: {
+        // '120': '1.11',
       }
     },
   },
