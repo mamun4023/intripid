@@ -11,12 +11,12 @@ export default function FooterBottom(){
 
     return(
         <div className="flex justify-center"> 
-        <div className=" w-200 px-6  md:px-10 lg:p-3 py-14 bg-footerBg"> 
-            <div className="grid grid-cols-1 xl:grid-cols-6">
-                <div className="md:col-span-2"> 
+        <div className=" w-200 px-6 py-10  md:px-10 xl:px-16 bg-footerBg"> 
+            <div className="grid grid-cols-1 xl:grid-cols-5">
+                <div className="md:col-span-1"> 
                    
                     {/* logo and social logo */}
-                    <div className= "text-center md:text-start lg:text-left lg:pl-20">
+                    <div className= "text-center md:text-start lg:text-left">
                         <div className= "flex justify-center md:justify-start lg:justify-start">  
                             <img 
                                 src = {Logo} 
@@ -143,7 +143,7 @@ export default function FooterBottom(){
                 </div> 
             </div>
             
-            <div className="mt-10 xl:px-20 md:flex justify-between"> 
+            <div className="mt-10 md:flex justify-between"> 
                 <div className="flex justify-center" >
                     <p className="text-xs text-fontColor font-sans_regular"> All rights reserved © 2023 Intripid</p>
                 </div>

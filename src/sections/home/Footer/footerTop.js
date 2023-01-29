@@ -10,12 +10,12 @@ export default function FooterTop(){
         <div className="flex justify-center"> 
         <div 
             style={{ backgroundImage: `url(${BgImage})`}}
-            className="object-scale-down  relative overflow-hidden bg-no-repeat w-200"
+            className="object-scale-down  relative overflow-hidden bg-no-repeat w-200 h-140 xl:px-16"
         >
             <div>
                 <img 
                     src= {DotWash} 
-                    style = {{height : 600, width : 150}}
+                    
                     className = "absolute right-0 invisible lg:visible"
                 />
              </div>
@@ -23,17 +23,17 @@ export default function FooterTop(){
                 <div>
                     <img 
                         src= {CampaignImage}
-                        className = "w-96 relative lg:w-9/12"
+                        className = "relative scale-110"
                     />
                 </div>
-                <div className="mt-16 m-8 md:px-20 lg:w-6/12">
+                <div className="mt-16 xl:mt-40 xl:pl-10  lg:w-6/12">
                     <div class="flex justify-center">
-                        <div class="block p-7 rounded-3xl shadow-lg bg-white ">
-                            <h5 class="text-3xl md:text-4xl font-readex_bold text-fontColor mb-2">
+                        <div class="block p-7 rounded-3xl shadow-lg bg-white  bg-blend-normal">
+                            <h5 class="text-3xl md:text-4xl xl:text-5xl font-readex_bold text-fontColor mb-2">
                                 A more compassionate wolrd through increased travel.
                             </h5>
-                            <p class="text-xs text-fontColor leading-5">
-                                Travel exposes us to the lives of others. Our mission is to encourage people <br/> to travel by making it easier to plan, book, and execute amazing trips.
+                            <p class="text-xl text-fontColor py-6 leading-5">
+                                Travel exposes us to the lives of others. Our mission is to encourage people  to travel by making it easier to plan, book, and execute amazing trips.
                             </p>
                         </div>
                     </div>
