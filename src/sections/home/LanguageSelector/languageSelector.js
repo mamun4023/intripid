@@ -21,7 +21,7 @@ export default function LanguageSelector(){
             <div className="w-200 relative">
                 <div className="flex justify-end bg-bgLight"> 
                     <div 
-                        className=" flex relative hover:opacity-20 items-center cursor-pointer p-4" 
+                        className=" flex relative hover:opacity-20 items-center cursor-pointer p-4 px-6" 
                         onClick={()=> setOpen(true)} 
                     > 
                         <FontAwesomeIcon 
@@ -46,7 +46,7 @@ export default function LanguageSelector(){
                 open = {open}
                 setOpen = {setOpen}
             > 
-                <div className=" absolute right-20 top-14 "> 
+                <div className=" absolute right-20 top-14 border border-borderColor rounded-xl "> 
                     <div className="w-60 bg-white shadow-xl border-2 overflow-clip border-bgLight rounded-xl">
                         {
                             languages.map(language => 

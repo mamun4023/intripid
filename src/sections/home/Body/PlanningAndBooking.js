@@ -11,10 +11,10 @@ import Button from "../../../components/Button/Button"
 
 export default function PlanningAndBooking (){
     return(
-        <div className="flex justify-center">
+        <div className="flex justify-center my-20">
             <div className="flex justify-center flex-wrap xl:flex-nowrap px-4 md:px-16 w-200 "> 
                 <div className="">
-                    <div>
+                    <div className="mt-20">
                         <div> 
                             <h1 className="font-readex_bold text-fontColor text-5xl">
                                 <FontAwesomeIcon 

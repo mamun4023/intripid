@@ -13,6 +13,7 @@ export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
     const [open, setOpen] = useState(false);
 
+    // console.log(open)
     
     return(
         <div> 
@@ -24,8 +25,8 @@ export default function NavBar() {
                                 <a href="#">
                                     <img className="w-20 hidden md:w-24 md:block lg:w-40 lg:block" src= {DesktopAndTabletLogo} />
                                     {navbar? 
-                                    <img className="w-28 md:hidden" src= {DesktopAndTabletLogo} />:
-                                    <img className="w-10 md:hidden " src= {MobileLogo} />
+                                        <img className="w-28 md:hidden" src= {DesktopAndTabletLogo} />:
+                                        <img className="w-10 md:hidden" src= {MobileLogo} />
                                     }
                                 </a>
                                 <div className="flex items-center">
@@ -90,7 +91,7 @@ export default function NavBar() {
                                     <li 
                                         className="py-2"
                                         onClick={()=>{
-                                            setOpen(prev => !prev)
+                                            setOpen(!open)
                                             
                                         }}
                                     >
@@ -150,7 +151,6 @@ export default function NavBar() {
                     > 
                         <div className="w-160 bg-white shadow-xl  border-2 border-borderColor  rounded-xl">
                             <div className="shadow-inner"
-                                onClick={()=> setOpen(true)}
                             > 
                                 <DropDownContnt />
                             </div>

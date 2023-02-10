@@ -13,7 +13,7 @@ export default function TabSection(){
         <div className="flex justify-center ">
             <div className="w-200 xl:px-16"> 
             <div className="flex justify-between flex-wrap xl:flex-nowrap">
-                <div className="">
+                <div className="mx-auto">
                     <img 
                         src= {leftImage}
                         className = "w-140" 
@@ -21,7 +21,7 @@ export default function TabSection(){
                     /> 
                 </div>
                 
-                <div className=" mt-24 hidden md:block rounded-full "> 
+                <div className="mx-auto mt-24 hidden md:block rounded-full "> 
                     <ul className="flex list-none border-b-0 pl-0" >
                         <li 
                             onClick = {()=>setTab(1)}
