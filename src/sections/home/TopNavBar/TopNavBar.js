@@ -1,4 +1,5 @@
 import React,{ useState } from "react";
+import {AnimatePresence, motion} from 'framer-motion';
 import {faCheck, faChevronDown, faChevronUp, faTree , faUserTie, faHandHoldingDollar, faPlane, faBuilding} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DesktopAndTabletLogo from '../../../utils/logo/navigationvar-logo-desktop-and-tablet.svg';
@@ -86,7 +87,14 @@ export default function NavBar() {
                             >
                                 <ul className="items-center justify-center lg:flex lg:space-x-6 md:space-y-0">
                                     <li className="py-2">
-                                        <a className="block text-md 2xl:text-lg font-sans_medium text-fontColor lg:text-sm border-b-2 border-white hover:border-primary " href="#">About</a>
+                                        <motion.a 
+                                            className="block text-md 2xl:text-lg font-sans_medium text-fontColor lg:text-sm border-b-2 transition-all duration-500 border-white hover:border-primary" 
+                                            href="#"
+                                            initial = {{opacity : 1}}
+                                            whileHover={{opacity : 0.8}}
+                                        >
+                                            About
+                                        </motion.a>
                                     </li>
                                     <li 
                                         className="py-2"
@@ -97,35 +105,52 @@ export default function NavBar() {
                                     >
                                         <a 
                                      
-                                        className="block text-md 2xl:text-lg font-sans_medium text-fontColor  lg:text-sm border-b-2 border-white hover:border-primary" href="#">
+                                        className="block text-md 2xl:text-lg font-sans_medium text-fontColor  lg:text-sm border-b-2 border-white transition-all duration-500 hover:border-primary" href="#">
                                             Travel Solution
                                             {!open &&
-                                                <FontAwesomeIcon 
-                                                    icon={faChevronDown}
-                                                    className = "text-xs 2xl:text-lg pl-1 text-fontColor"
-                                                />
+                                                <motion.span
+                                                    initial = {{opacity : 0}}
+                                                    animate = {{opacity : 1}}
+                                                    
+                                                >
+                                                    <FontAwesomeIcon 
+                                                        icon={faChevronDown}
+                                                        className = "text-xs 2xl:text-lg pl-1 text-fontColor"
+                                                    />
+                                                </motion.span>
                                             }
                                             {open && 
-                                                <FontAwesomeIcon 
-                                                    icon={faChevronUp}
-                                                    className = "text-xs 2xl:text-lg pl-1 text-fontColor"
-                                                /> 
+                                                <motion.span> 
+                                                    <FontAwesomeIcon 
+                                                        icon={faChevronUp}
+                                                        className = "text-xs 2xl:text-lg pl-1 text-fontColor"
+                                                    /> 
+                                                </motion.span>
                                             }    
                                         </a>
                                     </li>
+                                    <AnimatePresence> 
                                     {open && 
-                                        <div className="lg:hidden">
-                                            <DropDownContnt />
-                                        </div>
+                                        
+                                            <motion.div 
+                                                className="lg:hidden"
+                                                initial = {{y : -50}}
+                                                animate = {{y : 0}}
+                                                exit = {{opacity : 0}}
+                                            >
+                                                <DropDownContnt />
+                                            </motion.div>
+                                       
                                         }
+                                    </AnimatePresence>
                                     <li className="py-2 ">
-                                        <a className=" block text-md 2xl:text-lg font-sans_medium text-fontColor  lg:text-sm border-b-2 border-white hover:border-primary" href="#">Our Travelers</a>
+                                        <a className=" block text-md 2xl:text-lg font-sans_medium text-fontColor  lg:text-sm border-b-2 border-white transition-all duration-500 hover:border-primary" href="#">Our Travelers</a>
                                     </li>
                                     <li className="py-2">
-                                        <a className="block text-md 2xl:text-lg font-sans_medium text-fontColor  lg:text-sm border-b-2 border-white hover:border-primary " href="#">Pricing</a>
+                                        <a className="block text-md 2xl:text-lg font-sans_medium text-fontColor  lg:text-sm border-b-2 border-white transition-all duration-500 hover:border-primary " href="#">Pricing</a>
                                     </li>
                                     <li className="py-2 ">
-                                        <a className=" block text-md 2xl:text-lg font-sans_medium text-fontColor lg:text-sm  border-b-2 border-white hover:border-primary" href="#">FAQs</a>
+                                        <a className=" block text-md 2xl:text-lg font-sans_medium text-fontColor lg:text-sm  border-b-2 border-white transition-all duration-500 hover:border-primary" href="#">FAQs</a>
                                     </li>
                                     <li className="hidden lg:block ">
                                         <Button 
@@ -145,8 +170,10 @@ export default function NavBar() {
                 open={open}
                 setOpen = {setOpen}
             >
-                    <div 
+                    <motion.div 
                         className="absolute z-40 left-80"
+                        initial = {{y : -100}}
+                        animate = {{y : 0}}
                      
                     > 
                         <div className="w-160 bg-white shadow-xl  border-2 border-borderColor  rounded-xl">
@@ -155,7 +182,7 @@ export default function NavBar() {
                                 <DropDownContnt />
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
             </Modal>
             </div>
         </div>
@@ -166,7 +193,10 @@ export default function NavBar() {
 
 const DropDownContnt = ()=>{
     return(
-        <div className="h-96 overflow-y-scroll  xl:overflow-auto">
+        <div 
+            className="h-96 overflow-y-scroll xl:overflow-auto"
+            
+        >
             <div className="grid grid-cols-1 lg:grid-cols-5  ">
                 <div className="col-span-2 lg:border-r border-borderColor px-2">
                     <div className="flex justify-between items-center xl:pt-2 ">

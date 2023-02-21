@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {motion} from 'framer-motion';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import Modal from "../../../components/Modal/LanguageSelectionModal";
@@ -46,7 +47,11 @@ export default function LanguageSelector(){
                 open = {open}
                 setOpen = {setOpen}
             > 
-                <div className=" absolute right-20 top-14 border border-borderColor rounded-xl "> 
+                <motion.div 
+                    className="absolute right-20 top-14 border border-borderColor rounded-xl "
+                    initial = {{y:-100}}
+                    animate = {{y:0}}
+                > 
                     <div className="w-60 bg-white shadow-xl border-2 overflow-clip border-bgLight rounded-xl">
                         {
                             languages.map(language => 
@@ -65,7 +70,7 @@ export default function LanguageSelector(){
                             )
                         }       
                     </div>
-                </div>
+                </motion.div>
             </Modal>
         </div> 
     )
