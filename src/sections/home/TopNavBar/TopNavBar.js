@@ -43,12 +43,16 @@ export default function NavBar() {
                                         className="p-2 text-fontColor rounded-md outline-none "
                                         onClick={() => setNavbar(!navbar)}
                                     >
+                                        <AnimatePresence> 
                                         {navbar ? (
+                                
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 className="w-7 h-7"
                                                 viewBox="0 0 20 20"
                                                 fill="currentColor"
+                                              
+                                                
                                             >
                                                 <path
                                                     fillRule="evenodd"
@@ -56,22 +60,32 @@ export default function NavBar() {
                                                     clipRule="evenodd"
                                                 />
                                             </svg>
+                                           
                                         ) : (
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                className="w-8 h-8"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                                strokeWidth={2}
-                                            >
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    d="M4 6h16M4 12h16M4 18h16"
-                                                />
-                                            </svg>
+                                            <motion.span 
+                                                initial = {{opacity : 0}}
+                                                animate = {{opacity : 1}}
+                                                transition = {{duration : 1}}
+                                                exit = {{opacity : 0}}
+                                            > 
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    className="w-8 h-8"
+                                                    fill="none"
+                                                    viewBox="0 0 24 24"
+                                                    stroke="currentColor"
+                                                    strokeWidth={2}
+                                                    
+                                                >
+                                                    <path
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        d="M4 6h16M4 12h16M4 18h16"
+                                                    />
+                                                </svg>
+                                            </motion.span>
                                         )}
+                                        </AnimatePresence>
                                     </button>
                                 </div>
                                 </div>
@@ -85,7 +99,10 @@ export default function NavBar() {
                                     navbar ? "block" : "hidden"
                                 }`}
                             >
-                                <ul className="items-center justify-center lg:flex lg:space-x-6 md:space-y-0">
+                                <ul 
+                                    className="items-center justify-center lg:flex lg:space-x-6 md:space-y-0"
+                                    
+                                >
                                     <li className="py-2">
                                         <motion.a 
                                             className="block text-md 2xl:text-lg font-sans_medium text-fontColor lg:text-sm border-b-2 transition-all duration-500 border-white hover:border-primary" 
