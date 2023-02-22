@@ -18,7 +18,12 @@ export default function NavBar() {
     
     return(
         <div> 
-            <div className="flex justify-center"> 
+            <motion.div 
+                className="flex justify-center"
+                initial = {{opacity : 0}}
+                animate = {{opacity : 1}}
+                transition = {{duration : 3}}
+            > 
                 <nav className="px-4 md:px-16 bg-white w-200">
                     <div className="justify-between mx-auto md:items-center lg:flex">
                         <div>
@@ -179,7 +184,7 @@ export default function NavBar() {
                         </div>
                     </div>
                 </nav>
-            </div>
+            </motion.div>
          {/* Top DropDown menu  modal*/}
 
             <div className="hidden lg:block">

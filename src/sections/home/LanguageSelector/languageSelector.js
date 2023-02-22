@@ -19,7 +19,12 @@ export default function LanguageSelector(){
 
     return(
         <div className="flex justify-center">
-            <div className="w-200 relative">
+            <motion.div 
+                className="w-200 relative"
+                initial = {{y:-20, opacity : 0}}
+                animate = {{y: 0, opacity : 1}}
+                transition = {{duration : 1}}
+            >
                 <div className="flex justify-end bg-bgLight"> 
                     <div 
                         className=" flex relative hover:opacity-20 items-center cursor-pointer p-4 px-6" 
@@ -38,19 +43,16 @@ export default function LanguageSelector(){
                         />
                     </div>
                 </div>
-            
-
-            {/* list modal */}
-            
-        </div>
+    
+            </motion.div>
         <Modal
                 open = {open}
                 setOpen = {setOpen}
             > 
                 <motion.div 
                     className="absolute right-20 top-14 border border-borderColor rounded-xl "
-                    initial = {{y:-100}}
-                    animate = {{y:0}}
+                    initial = {{y : -30}}
+                    animate = {{y : 0}}
                 > 
                     <div className="w-60 bg-white shadow-xl border-2 overflow-clip border-bgLight rounded-xl">
                         {

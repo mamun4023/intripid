@@ -7,11 +7,32 @@ import TravelAdvisorIcon from '../../../utils/BrandIcons/Pngs/Travel Advisor 1.p
 import TravelTicketIcon from '../../../utils/BrandIcons/Pngs/Tickets 1.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faStar} from '@fortawesome/free-regular-svg-icons';
+import {motion} from 'framer-motion';
+
+
+const cardVariants = {
+    offscreen: {
+      y: 300
+    },
+    onscreen: {
+      y: 50,
+    //   rotate: -10,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.8
+      }
+    }
+  };
 
 
 export default function TopBody(){
     return(
-        <div className="flex justify-center"> 
+        <div className="flex justify-center"
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
+        > 
         <div 
             style={{ backgroundImage: `url(${BgImage})`}}
             className = "w-200 relative overflow-hidden"
@@ -31,7 +52,13 @@ export default function TopBody(){
             </div>
              {/* center box */}
             <div className="flex justify-center flex-wrap">
-                <div className="block p-4 m-4 lg:m-6 rounded-3xl shadow-lg bg-white w-80 md:w-64">
+                <motion.div 
+                    className="block p-4 m-4 lg:m-6 rounded-3xl shadow-lg bg-white w-80 md:w-64 hover:cursor-pointer"
+                    whileHover={{scale : 1.2}}
+                    transition = {{duration : 0.4}}
+                    variants={cardVariants}
+                    
+                >
                     <div className="my-2 p-2"> 
                         <img  
                             src= {TravelIcon} 
@@ -44,8 +71,13 @@ export default function TopBody(){
                             Members get limitless recommendations of destinations based on their customization
                         </p>
                     </div>
-                </div>
-                <div className="block p-4 m-4 lg:m-6 rounded-3xl shadow-lg bg-white w-80 md:w-64">
+                </motion.div>
+                <motion.div 
+                    className="block p-4 m-4 lg:m-6 rounded-3xl shadow-lg bg-white w-80 md:w-64 hover:cursor-pointer"
+                    whileHover={{scale : 1.2}}
+                    transition = {{duration : 0.4}}
+                    variants={cardVariants}
+                >
                     <div className="my-2 p-2"> 
                         <img  
                             src= {TravelAdvisorIcon} 
@@ -61,8 +93,13 @@ export default function TopBody(){
                             No more doubts because of professional advices from seasoned travelers
                         </p>
                     </div>
-                </div>
-                <div className="block p-4 m-4 lg:m-6 rounded-3xl shadow-lg bg-white w-80 md:w-64">
+                </motion.div>
+                <motion.div 
+                    className="block p-4 m-4 lg:m-6 rounded-3xl shadow-lg bg-white w-80 md:w-64 hover:cursor-pointer"
+                    whileHover={{scale : 1.2}}
+                    transition = {{duration : 0.4}}
+                    variants={cardVariants}
+                >
                     <div className="my-2 p-2"> 
                         <img  
                             src= {TravelTicketIcon} 
@@ -78,18 +115,19 @@ export default function TopBody(){
                             Free upgrades, vouchers, flash deals, and marvelous experiences!
                         </p>
                     </div>
-                </div>        
+                </motion.div>        
             </div>
             <div className="flex justify-center flex-wrap m-4 md:mt-16">
-                <button
+                <motion.button
                     className="bg-white font-sans_medium text-fontColor text-black text-ms px-8  p-4 rounded-full  hover:bg-slate-200"
-                
+                    whileHover={{scale : 1.2}}
+                    transition = {{duration : 0.4}}
                 > Be an Exclusive Member Now 
                     <FontAwesomeIcon 
                         icon = {faStar}
                         className="text-violet-600 pl-2"
                     />
-                </button>
+                </motion.button>
             </div>
             <div className="flex justify-center flex-wrap m-4 pb-10 mb-28 ">
                 <h3 className=" font-sans_medium text-white"> Have a trip for as low as $28! </h3>
