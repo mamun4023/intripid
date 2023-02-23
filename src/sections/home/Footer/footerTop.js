@@ -67,7 +67,7 @@ export default function FooterTop(){
                             </p>
                         </div>
                     </div>
-                    <div className="flex justify-center mt-10  md:justify-start ">
+                    <div className="flex justify-center my-10  md:justify-start ">
                         <button
                             className="bg-white text-md text-fontColor font-sans_medium rounded-full px-12 p-4 w-full md:w-5/12 lg:w-6/12 "
                         > Join the Mission </button>
@@ -75,6 +75,7 @@ export default function FooterTop(){
                 </motion.div>
             </div>
         </div>
+       
         </motion.div>
     )
 }
