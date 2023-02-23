@@ -12,8 +12,13 @@ export default function TopBanner(){
                     animate = {{opacity : 1, x:0}}
                     transition = {{duration : 1}}
                 >
-                    <h1 className="font-readex_bold text-fontColor text-5xl md:text-7xl lg:text-7xl 2xl:text-12xl ">Plan Less.<br/>Travel More.</h1>
-                    <p className="mt-10 mb-4 text-fontColor text-lg md:text-md  xl:text-xl  font-sans_regular">Finding and planning a great itinerary can be stressful and time consuming <b> <i> — Intripid makes it easy </i> </b></p> 
+                    <motion.h1 
+                        className="font-readex_bold text-fontColor text-5xl md:text-7xl lg:text-7xl 2xl:text-12xl"
+                        
+
+                    >Plan Less.<br/>Travel More.
+                    </motion.h1>
+                    <p className="mt-10 mb-4 text-fontColor text-lg md:text-md  xl:text-xl  font-sans_regular">Finding and planning a great itinerary can be stressful and time <br/> consuming <b> <i> — Intripid makes it easy </i> </b></p> 
                     <div className="flex mt-10"> 
                     <input
                         type="text"
@@ -43,7 +48,7 @@ export default function TopBanner(){
                 >                  
                     <img 
                         src= {BannerImage} 
-                        className=" scale-110  w-140 md:scale-125 lg:scale-130 lg:w-150 xl:w-120 xl:mt-20"
+                        className=" scale-110 mt-10  w-140 md:scale-125 lg:scale-130 lg:w-150 xl:w-120 xl:mt-20"
                     />
                 </motion.div>
             </div>

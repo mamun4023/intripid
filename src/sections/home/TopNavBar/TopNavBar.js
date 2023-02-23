@@ -198,7 +198,7 @@ export default function NavBar() {
                         animate = {{y : 0}}
                      
                     > 
-                        <div className="w-160 bg-white shadow-xl  border-2 border-borderColor  rounded-xl">
+                        <div className="w-160 xl:ml-40 bg-white shadow-xl  border-2 border-borderColor  rounded-xl">
                             <div className="shadow-inner"
                             > 
                                 <DropDownContnt />

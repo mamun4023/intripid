@@ -7,13 +7,37 @@ import { faCheck, faClipboardList, faTree, faUser } from "@fortawesome/free-soli
 
 import ProfessionalImage from '../../../utils/InteractiveImages/professional-guides.png'
 import Button from "../../../components/Button/Button"
+import {motion} from 'framer-motion';
+
+
+const cardVariants = {
+    offscreen: {
+      x: '100vh'
+    },
+    onscreen: {
+      x: 0,
+    //   rotate: -10,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 1
+      }
+    }
+  };
 
 
 export default function PlanningAndBooking (){
     return(
-        <div className="flex justify-center my-20">
+        <motion.div 
+            className="flex justify-center my-20"
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
+        >
             <div className="flex justify-center flex-wrap xl:flex-nowrap px-4 md:px-16 w-200 "> 
-                <div className="">
+                <motion.div
+                    variants={cardVariants}
+                >
                     <div className="mt-20">
                         <div> 
                             <h1 className="font-readex_bold text-fontColor text-5xl">
@@ -60,15 +84,17 @@ export default function PlanningAndBooking (){
                            /> 
                         </div>        
                     </div>
-                </div>
-                <div className="">
+                </motion.div>
+                <motion.div
+                    variants={cardVariants}
+                >
                     <img 
                         src= {BookingAssistanceImage} 
                         className="scale-100 md:scale-110 w-140 lg:scale-130 lg:w-150 xl:scale-110 xl:pl-10 xl:w-120"
                     />
-                </div>
+                </motion.div>
             </div>
 
-        </div>
+        </motion.div>
     )
 }

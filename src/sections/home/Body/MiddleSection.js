@@ -3,7 +3,7 @@ import leftImage from '../../../utils/InteractiveImages/the-perfect-destination-
 import BookingAssistanceImage from '../../../utils/images/Planning&BookingAssistanceImage@2x.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faClipboardList, faTree, faUser } from "@fortawesome/free-solid-svg-icons";
-
+import {motion} from 'framer-motion';
 import ProfessionalImage from '../../../utils/InteractiveImages/professional-guides.png'
 import Button from "../../../components/Button/Button";
 import PlanningAndBooking from "./PlanningAndBooking";
@@ -17,11 +17,13 @@ export default function MiddleSection(){
             <div className="flex justify-center"> 
             <div className="w-200">
                 <div className="flex justify-center mt-28">
-                    <button
+                    <motion.button
                         className=" bg-fontColor text-white font-sans_medium text-sm rounded-full p-2 px-8 m-2 hover:bg-violet-700 hover:text-white"
+                        whileHover={{scale : 1.2}}
+                        transition = {{duration : 0.4}}
                     > 
                         How Intripid works 
-                    </button>
+                    </motion.button>
                 </div>
                 <div className="flex justify-center m-4">
                     <h1 className="font-readex_bold text-fontColor text-5xl text-center">2 Simple Steps </h1>

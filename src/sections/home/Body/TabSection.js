@@ -4,6 +4,7 @@ import BookingAssistanceImage from '../../../utils/images/Planning&BookingAssist
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faClipboardList, faTree, faUser } from "@fortawesome/free-solid-svg-icons";
 
+import {motion} from 'framer-motion';
 
 export default function TabSection(){
     const[tab, setTab] = useState(1)
@@ -32,6 +33,8 @@ export default function TabSection(){
                                 rounded-tr-xl 
                                 border-b-8
                                 hover:border-b-primary
+                                transition-all duration-500
+                                hover:cursor-pointer
                                 ${tab ==1? 'border-b-primary' : 'border-b-inputBg' }
                             `}
                         >
@@ -45,6 +48,8 @@ export default function TabSection(){
                                 rounded-tr-xl 
                                 border-b-8
                                 hover:border-b-primary
+                                transition-all duration-500
+                                hover:cursor-pointer
                                 ${tab ==2? 'border-b-primary' : 'border-b-inputBg' }
                             `}
                             onClick = {()=> setTab(2)}
@@ -55,7 +60,13 @@ export default function TabSection(){
                         </ul>
                         <div className="" >
                             {tab == 1? 
-                                <div className="py-10 w-140 "> 
+                                <motion.div 
+                                    className="py-10 w-140"
+                                    initial = {{x : '100vh'}}
+                                    animate = {{x : 0}}
+                                    transition = {{duration : 0.3}}
+
+                                > 
                                     <div className="flex items-center" >
                                         <FontAwesomeIcon 
                                             icon={faTree}
@@ -89,12 +100,50 @@ export default function TabSection(){
                                             className="bg-violet-500 text-white rounded-full text-xs font-readex_medium px-8 p-2 mt-4"
                                         >Find Your Destination </button>    
                                     </div>
-                                </div>
+                                </motion.div>
                             :null}
                             {tab == 2 ? 
-                            <div className="py-10 w-140">
-                                Tab 2 content 
+                            <motion.div 
+                                className="py-10 w-140"
+                                initial = {{x : '100vh'}}
+                                animate = {{x : 0}}
+                                transition = {{duration : 0.3}}
+
+                        > 
+                            <div className="flex items-center" >
+                                <FontAwesomeIcon 
+                                    icon={faTree}
+                                    className = "text-4xl text-fontColor"
+                                />
+                                <h2 className="pl-2 font-readex_bold text-fontColor text-4xl text-slate-700"> The perfect Wisdom </h2>
                             </div>
+                            <div className="mt-10"> 
+                                <p className="text-md font-sans_regular text-fontColor"> 
+                                    Answer a few, quick questions about when you’re available to travel, your budget, etc.
+                                </p>
+                            </div>
+                            <div className="py-4"> 
+                                <p className="text-md font-sans_regular text-fontColor"> 
+                                    A Travel Advisor will use your answers and Intripid’s augmented intelligence tools to analyze all the places in the world you could go and recommend the perfect destination you should go.
+                                </p>
+                            </div>
+                            <div className="py-4"> 
+                                <p className="text-md font-sans_regular text-fontColor"> 
+                                    Within 24-hours, you’ll receive an email with the recommended destination, an explanation of why it’s perfect for your trip, photos, some of the top attractions to explore there, etc.
+                                </p>
+                            </div>
+                            <div className="py-4"> 
+                                <p className="text-md font-sans_regular text-fontColor"> 
+                                    If you don’t love your destination, simply request another — Intripid is so confident in our technology and advisors that you get unlimited recommendations.
+                                </p>
+                            </div>
+
+                            <div>
+                                <button
+                                    className="bg-violet-500 text-white rounded-full text-xs font-readex_medium px-8 p-2 mt-4"
+                                >Find Your Destination </button>    
+                            </div>
+                        </motion.div>
                             : null}
                     
                         </div>
