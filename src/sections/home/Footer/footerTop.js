@@ -34,14 +34,14 @@ export default function FooterTop(){
         > 
         <div 
             style={{ backgroundImage: `url(${BgImage})`}}
-            className="object-scale-down  relative overflow-hidden bg-no-repeat w-200 xl:h-140  xl:px-16"
+            className="object-scale-down pb-4  relative overflow-hidden bg-no-repeat w-200 xl:h-140  xl:px-16"
         >
             <div
 
             >
                 <img 
                     src= {DotWash} 
-                    className = "absolute z-0 right-0 invisible lg:visible"
+                    className = " h-[1000px] absolute z-0 right-0 invisible lg:visible"
                 />
             </div>
             <div className="flex justify-center flex-wrap lg:flex-nowrap">

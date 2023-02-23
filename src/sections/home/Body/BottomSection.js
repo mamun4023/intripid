@@ -19,7 +19,7 @@ export default function BottomSection(){
             </div>
 
             {/* table */}
-            <BottomTable />
+            {/* <BottomTable /> */}
             
             <div className="flex justify-center flex-wrap mt-10">
                 <div class="block p-8 m-4 rounded-lg shadow-md bg-inputBg w-64">

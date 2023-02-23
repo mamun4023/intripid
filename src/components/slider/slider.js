@@ -2,6 +2,9 @@ import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight, faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
+import {motion} from 'framer-motion';
+
+
 export default function Slider(){
   const [current, setCurrent] = useState(0)
   const slideLength = Data.length;
@@ -24,23 +27,23 @@ export default function Slider(){
 
 
   return(
-    <div className=' flex justify-center w-80 '>
+    <div className=' flex justify-center w-[300px] md:w-[600px] lg:w-[800px]'>
       <div>
         <div className='border border-borderColor shadow-sm p-10 rounded-xl h-128 xl:h-96 w-full grid grid-cols-1'>
             {/* image and name and identity */}
             <div className='relative'>
               <div> 
                 <div 
-                  className='absolute -right-14 top-44 md:top-30 lg:top-24 align-middle bg-info p-2 w-10 h-10 rounded-full'
+                  className='absolute -right-14 top-44 md:top-30 lg:top-24 align-middle bg-info p-2 w-10 h-10 rounded-full hover:cursor-pointer'
                   onClick={Next}
                 >
                   <FontAwesomeIcon 
                     icon={faArrowRight}
-                    className = "text-white ml-1"
+                    className = "text-white ml-1 "
                   />
                 </div>
                 <div 
-                  className='absolute top-44 md:top-30 lg:top-24 -left-14 bg-info p-2 w-10 h-10 rounded-full'
+                  className='absolute top-44 md:top-30 lg:top-24 -left-14 bg-info p-2 w-10 h-10 rounded-full hover:cursor-pointer'
                   onClick={Prev}
                 >
                   <FontAwesomeIcon 
@@ -53,9 +56,18 @@ export default function Slider(){
                {
                 Data.map((slide, index)=>{
                   return(
-                    <div className= {index == current? 'block' : 'hidden'} key = {index}>
+                    <div 
+                      className= {index == current? 'block' : 'hidden'} key = {index}
+                      
+                    >
                       {index === current && (
-                        <div className='transition-all duration-1000 ease-linear'> 
+                        <motion.div 
+                          className='transition-all duration-1000 ease-linear'
+                          initial = {{opacity : 0, }}
+                          animate = {{opacity : 1,}}
+                          transition  = {{duration : 1}}
+                        
+                        > 
                           <div className='lg:flex justify-between items-center'> 
                             <div className=' flex justify-center lg:grid lg:grid-col-1 lg:w-9/12'>
                                 <div className='flex justify-center'> 
@@ -97,7 +109,7 @@ export default function Slider(){
                                 </div>
                             </div>
                           </div>
-                        </div>  
+                        </motion.div>  
                       )}
                     </div>
                   )

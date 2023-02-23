@@ -32,7 +32,8 @@ export default function TopBanner(){
                             rounded-md font-sans_regular
                             text-md
                             transition
-                            ease-in-out
+                            ease-in-out outline-none
+                            focus:bg-footerBg
                         "
                         placeholder="Enter your email"
                     /> <button className="bg-primary hover:bg-primaryDark font-sans_medium text-md text-white p-1 ml-1 rounded-md w-40"> Join Now </button>

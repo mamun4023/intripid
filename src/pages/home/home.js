@@ -24,7 +24,7 @@ export default function Home(){
                 <TopSection />
                 <MiddleSection />
 
-                {/* <BottomSection /> */}
+                <BottomSection />
                 <FooterTop />
                 <FooterBottom/>
             
