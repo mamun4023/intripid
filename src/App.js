@@ -10,7 +10,10 @@ function App() {
         <Home />
       </div>
    
-   
   );
+}
+
+{
+console.log('%c Developer Tools! ', 'color: red');
 }
 export default App;

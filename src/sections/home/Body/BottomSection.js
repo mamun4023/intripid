@@ -19,23 +19,23 @@ export default function BottomSection(){
             </div>
 
             {/* table */}
-            {/* <BottomTable /> */}
+            <BottomTable />
             
             <div className="flex justify-center flex-wrap mt-10">
-                <div class="block p-8 m-4 rounded-lg shadow-lg border bg-inputBg w-[300px]">
-                    <h5 class="text-2xl font-readex_bold text-error mb-2">
+                <div className="block p-8 m-4 rounded-lg shadow-lg border bg-inputBg w-[300px]">
+                    <h5 className="text-2xl font-readex_bold text-error mb-2">
                         Legacy Custom— but expensive!
                         <FontAwesomeIcon 
                             icon={faXmarkCircle}
                             className = "text-md pl-2"
                         />
                     </h5>
-                    <p class=" font-sans_regular text-fontColor text-md pt-4">
+                    <p className=" font-sans_regular text-fontColor text-md pt-4">
                         Takes hundreds of dollars to employ an agent who will spend hours—or even days!—researching a small number of potential locations.
                     </p>
                 </div>
-                <div class="block p-7 m-4  rounded-lg shadow-md border bg-inputBg w-[300px]">
-                    <h5 class="text-2xl font-readex_bold text-error mb-2">
+                <div className="block p-7 m-4  rounded-lg shadow-md border bg-inputBg w-[300px]">
+                    <h5 className="text-2xl font-readex_bold text-error mb-2">
                         Legacy Pre-Packaged—not customized!
                         <FontAwesomeIcon 
                             icon={faXmarkCircle}
@@ -46,7 +46,7 @@ export default function BottomSection(){
                         A  microwave dinner of a trip - these are travel packages built to sell at volume, built for...definitely not you!
                     </p>
                 </div>
-                <div class="block p-7 m-4 rounded-lg shadow-md bg-inputBg w-[300px] border border-info">
+                <div className="block p-7 m-4 rounded-lg shadow-md bg-inputBg w-[300px] border border-info">
                     <h5 className="font-readex_bold text-info text-2xl">
                         Personalized, Fast, and Affordable Intripid!
                         <FontAwesomeIcon 

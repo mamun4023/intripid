@@ -14,7 +14,7 @@ export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
     const [open, setOpen] = useState(false);
 
-    // console.log(open)
+
     
     return(
         <div> 

@@ -20,14 +20,11 @@ export default function Home(){
             <div>  
                 <TopBanner />
             </div>
-           
                 <TopSection />
                 <MiddleSection />
-
                 <BottomSection />
                 <FooterTop />
                 <FooterBottom/>
-            
         </div>
     )
 }

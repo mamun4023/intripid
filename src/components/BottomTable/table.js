@@ -9,22 +9,22 @@ import IntripidLogo from '../../utils/logo/footer-logo.svg';
 
 export default function Table(){
     return(
-        <div className="">
-            <div className="mt-20 w-full " >
+        <div className="flex justify-center hidden xl:block">
+            <div className="mt-20 w-full relative" >
                 <div 
                     style={{ backgroundImage:`url(${TableBackground})` }}
-                    className = "p-20 pb-24 bg-contain bg-no-repeat"
+                    className = "bg-contain bg-no-repeat w-[1200px] h-[800px]"
                 >
-                    <div className="relative"> 
-                        <div class="flex justify-center">
-                            <div class="rounded-lg shadow-lg bg-white relative ">
+                    <div className="pt-20"> 
+                        <div className="flex justify-center">
+                            <div className="rounded-lg shadow-lg bg-white relative ">
                                 <img 
                                     src= {DotsImage}
-                                    className = "w-22 absolute top-0 left-10"
+                                    className = "w-34 absolute top-0 left-10"
                                 />
-                                <div className="flex ">
+                                <div className="flex">
                                     <div className="rounded-lg p-10">                                 
-                                        <div className="flex items-center justify-end mt-24 pt-1 "> 
+                                        <div className="flex items-center justify-end mt-28 pt-1 "> 
                                             <p className="text-lg font-readex_bold text-fontColor p-2"> Speed </p>
                                             <FontAwesomeIcon 
                                                 icon={faGauge}
@@ -61,11 +61,11 @@ export default function Table(){
                                         </div>
                                     </div>
                             
-                                    <div className="rounded-lg p-5 bg-inputBg">
+                                    <div className="rounded-lg p-8 bg-inputBg">
                                         <div className="mb-4">
-                                            <h4 className="font-readex_bold text-center text-xl text-fontColor">Legacy Custom</h4>
+                                            <h4 className="font-readex_bold text-center text-3xl text-fontColor xl:text-3xl">Legacy Custom</h4>
                                         </div>
-                                        <div className="flex justify-center mt-9 py-3"> 
+                                        <div className="flex justify-center mt-20 py-3"> 
                                             <p className="font-readex_bold text-lg text-error">Very Slow</p>
                                         </div>
                                         <div className="flex justify-center py-3"> 
@@ -84,11 +84,11 @@ export default function Table(){
                                         />
                                         </div>
                                     </div>
-                                    <div className="rounded-lg p-5 bg-inputBg">
+                                    <div className="rounded-lg p-8 bg-inputBg">
                                         <div className="mb-4">
-                                            <h4 className="font-readex_bold text-center text-md text-xl text-fontColor">Legacy Packaged</h4>
+                                            <h4 className="font-readex_bold text-center text-3xl text-fontColor">Legacy Packaged</h4>
                                         </div>
-                                        <div className="flex justify-center py-3 mt-9"> 
+                                        <div className="flex justify-center py-3 mt-20"> 
                                             <p className="font-readex_bold text-lg text-fontColor">Medium</p>
                                         </div>
                                         <div className="flex justify-center py-3 "> 
@@ -108,13 +108,13 @@ export default function Table(){
                                         </div>
                                     </div>
                                     <div className="border border-info rounded-lg w-60 px-12 ">
-                                        <div className=" py-10 flex justify-center">
+                                        <div className=" py-6 flex justify-center">
                                             <img  
                                                 src= {IntripidLogo} 
-                                                className = "w-28"
+                                                className = "w-30"
                                             />
                                         </div>
-                                        <div className="flex justify-center py-3 mt-5"> 
+                                        <div className="flex justify-center py-3 mt-14"> 
                                             <p className="font-readex_bold text-lg text-info">Very Fast</p>
                                         </div>
                                         <div className="flex justify-center py-3"> 
@@ -136,7 +136,7 @@ export default function Table(){
                                 </div>
                             </div>
                         </div>    
-                     </div>
+                     </div> 
                 </div>
             </div>
         </div>

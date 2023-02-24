@@ -28,9 +28,10 @@ const cardVariants = {
 
 export default function TopBody(){
     return(
-        <div className="flex justify-center"
+        <motion.div className="flex justify-center"
             initial="offscreen"
             whileInView="onscreen"
+
             viewport={{ once: true, amount: 0.8 }}
         > 
         <div 
@@ -133,7 +134,7 @@ export default function TopBody(){
                 <h3 className=" font-sans_medium text-white"> Have a trip for as low as $28! </h3>
             </div>
         </div>
-        </div>
+        </motion.div>
         
     )
 }

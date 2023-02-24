@@ -15,8 +15,6 @@ export default function Modal({open, setOpen, children}){
         };
     },[])
 
-    // console.log(open)
-
     return open? (
             <div>
                 <div 
