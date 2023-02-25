@@ -90,7 +90,7 @@ export default function PlanningAndBooking (){
                 >
                     <img 
                         src= {BookingAssistanceImage} 
-                        className="scale-100 md:scale-110 w-140 lg:scale-130 lg:w-150 xl:scale-110 xl:pl-10 xl:w-120"
+                        className="scale-100 mt-12 md:scale-110 w-140 lg:scale-130 lg:w-150 xl:scale-110 xl:pl-10 xl:w-120"
                     />
                 </motion.div>
             </div>

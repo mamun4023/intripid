@@ -17,7 +17,7 @@ export default function TabSection(){
                 <div className="mx-auto">
                     <img 
                         src= {leftImage}
-                        className = "w-140" 
+                        className = "w-140 mt-20" 
                         
                     /> 
                 </div>
