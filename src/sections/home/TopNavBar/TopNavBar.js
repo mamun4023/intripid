@@ -187,25 +187,25 @@ export default function NavBar() {
             </motion.div>
          {/* Top DropDown menu  modal*/}
 
-            <div className="hidden lg:block">
-            <Modal
-                open={open}
-                setOpen = {setOpen}
-            >
-                    <motion.div 
-                        className="absolute z-40 left-80"
-                        initial = {{y : -100}}
-                        animate = {{y : 0}}
-                     
-                    > 
-                        <div className="w-160 xl:ml-40 bg-white shadow-xl  border-2 border-borderColor  rounded-xl">
-                            <div className="shadow-inner"
-                            > 
-                                <DropDownContnt />
+            <div className="hidden lg:block absolute inset-x-0 shadow-xl bg-white w-3/4 md:w-2/5 mx-auto -mt-1 rounded-lg rounded-t-none">
+                <Modal
+                    open={open}
+                    setOpen = {setOpen}
+                >
+                        <motion.div 
+                            className="z-40  "
+                            initial = {{y : -20}}
+                            animate = {{y : 0}}
+                        
+                        > 
+                            <div className="w-160 xl:ml-40  bg-white shadow-xl  border-2 border-borderColor  rounded-xl">
+                                <div className="shadow-inner"
+                                > 
+                                    <DropDownContnt />
+                                </div>
                             </div>
-                        </div>
-                    </motion.div>
-            </Modal>
+                        </motion.div>
+                </Modal>
             </div>
         </div>
     );

@@ -118,7 +118,7 @@ export default function TopBody(){
                     </div>
                 </motion.div>        
             </div>
-            <div className="flex justify-center flex-wrap m-4 md:mt-16">
+            <div className="flex justify-center flex-wrap mt-16">
                 <motion.button
                     className="bg-white font-sans_medium text-fontColor text-black text-ms px-8  p-4 rounded-full  hover:bg-slate-200"
                     whileHover={{scale : 1.2}}
