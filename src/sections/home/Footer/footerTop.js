@@ -24,7 +24,6 @@ const cardVariants = {
 
 export default function FooterTop(){
     
-   
 
     return(
         <motion.div className="flex justify-center"
